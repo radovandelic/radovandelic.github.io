@@ -10,4 +10,4 @@ var obj = {
 	}
 
 }
-obj.whatnow()
+obj.whatnow();
