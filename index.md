@@ -1,8 +1,4 @@
-<<<<<<< HEAD
---Hi, I'm Radovan Delic. check out my projects.
-=======
-++Hi, I'm Radovan Delic. check out my projects.
->>>>>>> a62d7897cb217af0b5d52810fca6ea4d8f072243
+Hi, I'm Radovan Delic. check out my projects.
 
 
 **My first repo:** it's perfect, but useless. [code](https://github.com/radovandelic/testrepo)
