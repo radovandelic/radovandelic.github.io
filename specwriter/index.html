@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SpecWriter</title>
+	<script type="text/javascript">
+		var openFile = function (event) {
+			var input = event.target;
+			var objects = {};
+
+			var reader = new FileReader();
+			reader.onload = function () {
+				var text = reader.result;
+				var objectnames = text.match(new RegExp("var(.*)=", "g"));
+				//var objectnames = text.match(/var(.*)=/g);
+				//var textblocks =  text.match(new RegExp("=(.*);", "g"));
+				//text = "";
+				for (var i = 0; i < objectnames.length; i++) {
+					var temp = objectnames[i].replace("var", "").replace("=", "").trim();
+					//var props =  textblocks[i].match(new RegExp("\n(.*)", "g"));
+					//var textblock = text.match(RegExp(temp + "(.+)\;"));
+					var textblock = text.substring(text.indexOf(temp), text.indexOf("}"));
+					var props = textblock.split("|");
+					objects[temp] = {
+						name: temp,
+						properties: {}
+					}
+					for (var j = 0; j < props.length; j++) {
+						n = props[j].substring(props[j].indexOf("\n") + 1, props[j].indexOf(":")).trim();
+						if (n != null && n != "") {
+							objects[temp]["properties"][n] = {
+								name: n,
+								initialized: props[j].substring(props[j].indexOf(":") + 1, props[j].indexOf("//")).trim(),
+								purpose: props[j].substring(props[j].indexOf("d:") + 2, props[j].indexOf(";")).trim()
+							}
+						}
+					}
+					text = text.substring(text.indexOf("};")+2, text.lastIndexOf("};")+2);
+				}
+				var node = document.getElementById('output');
+				//text = JSON.stringify(objects);
+				//node.innerText = JSON.stringify(objects);
+				text = "";
+				for (var key in objects) {
+					text += objects[key]["name"] + ": object <br>";
+					text += "&nbsp;&nbsp; properties: " + Object.keys(objects[key]).length + "<br>";
+					for (var prop in objects[key]["properties"]) {
+						text += "&nbsp;&nbsp;&nbsp;&nbsp;" + objects[key]["properties"][prop]["name"] + ": " + typeof (objects[key]["properties"][prop]["initialized"]) + "<br>";
+						text += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;initialized: " + objects[key]["properties"][prop]["initialized"] + "<br>";
+						text += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;purpose: " + objects[key]["properties"][prop]["purpose"] + "<br>";
+					}
+				}
+				//text = Object.keys(objects.obj2.properties).length;
+				//text = objects.obj2.properties.prop1.name;
+				//text += objects.obj2.properties.prop1.purpose;
+				node.innerHTML = text;
+				var node = document.getElementById('titletext').remove();
+				var node = document.getElementById('inputid').remove();
+
+				console.log(reader.result.substring(0, 200));
+			}
+
+			reader.readAsText(input.files[0]);
+		};
+	</script>
+
+</head>
+
+<body>
+	<h2 id='titletext'>Open the js file you want specs for:</h2>
+	<input id='inputid' type='file' accept='text/javascript' onchange='openFile(event)'><br>
+	<div id='output'>
+	</div>
+</body>
+
+</html>
