@@ -1,3 +1,6 @@
+// The following code is based off a toggle menu by @Bradcomp
+// source: https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
+
 /*
 The MIT License (MIT)
 
@@ -21,24 +24,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
-html,body {
-  font-family: 'Open Sans', serif;
-}
-.hero.is-info {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url('http://www.sepeb.com/code-wallpaper/code-wallpaper-011.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.hero .nav, .hero.is-success .nav {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.hero .subtitle {
-  padding: 3rem 0;
-  line-height: 1.5;
-}
+(function () {
+    window.onload = () => {
+
+
+        var burger = document.querySelector('.navbar-burger');
+        var menu = document.querySelector('.navbar-menu');
+        burger.addEventListener('click', function () {
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+        });
+
+    }
+})();
