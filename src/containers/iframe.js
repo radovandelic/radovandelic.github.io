@@ -36,6 +36,14 @@ export default class Iframe extends Component {
                 url = "https://battleships.gq";
                 github = "https://github.com/radovandelic/apocryphon";
                 break;
+            case "starbook":
+                url = "https://radovandelic.github.io/starbook";
+                github = "https://github.com/radovandelic/starbook";
+                break;
+            case "cleancalc":
+                url = "https://radovandelic.github.io/cleancalc";
+                github = "https://github.com/radovandelic/cleancalc";
+                break;
             default:
                 break;
         }
@@ -96,6 +104,12 @@ export default class Iframe extends Component {
                 break;
             case "battleship":
                 url = "https://battleships.gq"
+                break;
+            case "starbook":
+                url = "https://radovandelic.github.io/starbook";
+                break;
+            case "cleancalc":
+                url = "https://radovandelic.github.io/cleancalc";
                 break;
             default:
                 break;
