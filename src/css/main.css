@@ -18,3 +18,7 @@ iframe {
   .navbar-dropdown {
       background: black;
   }
+
+  .tabs {
+      margin: auto;
+  }

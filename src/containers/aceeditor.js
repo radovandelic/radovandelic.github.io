@@ -27,6 +27,7 @@ export default class AceEditor extends Component {
         const style = { fontSize: '14px !important', border: '1px solid lightgray' };
         return (
             <div ref="editor" style={style}>
+                This section under construction
             </div>
         );
     }

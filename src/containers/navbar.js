@@ -18,32 +18,38 @@ export default function Navbar(props) {
                     </div>
                     <div id="navbarMenu" className="navbar-menu">
                         <div className="navbar-end">
-                            <a className="navbar-item" id="home" onClick={props.navigation}>
+                            <a href="/" className="navbar-item" id="home">
                                 Home
                             </a>
                             <div className="navbar-item has-dropdown is-hoverable">
-                                <a className="navbar-link" id="examples">
-                                    Examples
+                                <a className="navbar-link" id="projects">
+                                    Projects
                                 </a>
                                 <div className="navbar-dropdown">
-                                    <a id="rankerjs" className="navbar-item" onClick={props.navigation}>
+                                    <a href="/projects/philarios" id="philarios" className="navbar-item">
+                                        philarios
+                                    </a>
+                                    <a href="/projects/holmichapp" id="holmichapp" className="navbar-item">
+                                        holmichapp
+                                    </a>
+                                    <a href="/projects/rankerjs" id="rankerjs" className="navbar-item">
                                         ranker.js
                                     </a>
-                                    <a id="merchantjs" className="navbar-item" onClick={props.navigation}>
+                                    <a href="/projects/merchantjs" id="merchantjs" className="navbar-item">
                                         merchant.js
                                     </a>
-                                    <a id="starbook" className="navbar-item" onClick={props.navigation}>
-                                        starbook
-                                    </a>
-                                    <a id="battleship" className="navbar-item" onClick={props.navigation}>
+                                    <a href="/projects/battleship" id="battleship" className="navbar-item">
                                         battleship
                                     </a>
-                                    <a id="cleancalc" className="navbar-item" onClick={props.navigation}>
+                                    <a href="/projects/starbook" id="starbook" className="navbar-item">
+                                        starbook
+                                    </a>
+                                    <a href="/projects/cleancalc" id="cleancalc" className="navbar-item">
                                         MVC calculator
                                     </a>
                                 </div>
                             </div>
-                            <a className="navbar-item" id="contact" onClick={props.navigation}>
+                            <a href="/contact" className="navbar-item" id="contact">
                                 Contact
                             </a>
                             <span className="navbar-item">

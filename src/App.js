@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './css/landing.css';
 import './css/main.css'
-import { Switch, Navbar } from './containers'
-
+import { Navbar, Text, Iframe } from './containers'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 class App extends Component {
@@ -12,28 +12,22 @@ class App extends Component {
     this.state = {
       currentSection: "home"
     };
+  }
 
-    this.navigation = this.navigation.bind(this);
-  }
-  navigation(e) {
-    var section = e.target.id;
-    if (section) {
-      this.setState({ currentSection: section });
-      setTimeout(() => {
-        console.log(this.state.currentSection);
-      }, 300);
-    }
-  }
   render() {
     return (
-      <section class="hero is-info is-fullheight">
-        <Navbar navigation={this.navigation} />
+      <Router>
+        <section className="hero is-info is-fullheight">
+          <Navbar navigation={this.navigation} />
 
-        <div class="hero-body">
-          <Switch section={this.state.currentSection} navigation={this.navigation} />
-        </div>
-
-      </section>
+          <div className="hero-body">
+            <Route exact path="/" component={Text} />
+            <Route path="/projects/:project" component={Iframe} />
+            <Route exact path="/contact" component={Text} />
+            {/* <Switch section={this.state.currentSection} navigation={this.navigation} /> */}
+          </div>
+        </section>
+      </Router>
     );
   }
 }

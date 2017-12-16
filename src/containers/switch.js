@@ -1,5 +1,4 @@
 import React from 'react';
-import Box from './box';
 import Iframe from './iframe';
 import Text from './text';
 import AceEditor from './aceeditor';
