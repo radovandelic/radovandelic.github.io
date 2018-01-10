@@ -100,7 +100,7 @@ export default class Iframe extends Component {
                 url = "https://rankerjs.herokuapp.com";
                 break;
             case "merchantjs":
-                url = "httos://merchantjs.herokuapp.com";
+                url = "https://merchantjs.herokuapp.com";
                 break;
             case "battleship":
                 url = "https://battleships.gq"
@@ -115,8 +115,8 @@ export default class Iframe extends Component {
                 break;
         }
         return (
-            <div className="container" id="iframe">
-                <div className="tabs is-small is-toggle">
+            <div className="container has-addons-centered" id="iframe">
+                <div className="tabs is-small is-toggle is-centered">
                     <ul>
                         <li className="is-active" id="description" onClick={e => { this.changeElement("description"); }}>
                             <a>
@@ -144,7 +144,7 @@ export default class Iframe extends Component {
                         </li>
                     </ul>
                 </div>
-                <div id="frame">
+                <div className="column is-10 is-centered" id="frame">
                     <iframe title={match.params.project} src={url}></iframe>
                 </div>
             </div >
