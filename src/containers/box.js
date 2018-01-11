@@ -4,35 +4,48 @@ import React from 'react';
 export default function Box() {
     return (
         <div className="box is-centered">
-            <article class="media">
-                <div class="media-left">
-                    <figure class="image is-64x64">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image" />
+            <article className="media">
+                <div className="media-left">
+                    <figure className="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="placeholder" />
                     </figure>
                 </div>
                 <div class="media-content">
-                    <div class="content">
+                    <div className="content">
                         <p>
-                            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                            <strong>philarios.ml</strong>
                             <br />
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
-        </p>
+                            Language learning/practice application developed during my time at Elium Academy in collaboration with:
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/thefrontendguy/">Cahit Kaya</a>
+                                    <a href="https://www.linkedin.com/in/thefrontendguy/"> <span className="icon is-small"><i class="fa fa-linkedin-square"></i></span> </a>
+                                    <a href="https://github.com/thefrontendguy/"> <span className="icon is-small"><i class="fa fa-github-square"></i></span> </a>,
+                            </li> <li>
+                                    <a href="https://www.linkedin.com/in/george-ingram-67647732/">George Ingram</a>
+                                    <a href="https://www.linkedin.com/in/george-ingram-67647732/"> <span className="icon is-small"><i class="fa fa-linkedin-square"></i></span> </a>
+                                    <a href="https://github.com/ivoryblakk/"> <span className="icon is-small"><i className="fa fa-github-square"></i></span> </a>,
+                                </li> <li>
+                                    <a href="https://www.linkedin.com/in/syouboty/">Sanni Youboty</a>
+                                    <a href="https://www.linkedin.com/in/syouboty/"> <span className="icon is-small"><i className="fa fa-linkedin-square"></i></span> </a>
+                                    <a href="https://github.com/theutmost/"> <span className="icon is-small"><i className="fa fa-github-square"></i></span> </a>,
+                            </li>
+                            </ul>
+                            <br />
+                        </p>
                     </div>
-                    <nav class="level is-mobile">
-                        <div class="level-left">
-                            <a class="level-item">
-                                <span class="icon is-small"><i class="fa fa-reply"></i></span>
+                    <nav className="level is-mobile">
+                        <div className="level-left">
+                            <a className="level-item" href="https://philarios.ml">
+                                <span className="icon is-small"><i className="fa fa-external-link"></i></span>
                             </a>
-                            <a class="level-item">
-                                <span class="icon is-small"><i class="fa fa-retweet"></i></span>
-                            </a>
-                            <a class="level-item">
-                                <span class="icon is-small"><i class="fa fa-heart"></i></span>
+                            <a className="level-item" href="https://github.com/radovandelic/apocryphon">
+                                <span className="icon is-small"><i className="fa fa-github"></i></span>
                             </a>
                         </div>
                     </nav>
                 </div>
-            </article>
-        </div>
+            </article >
+        </div >
     )
 }

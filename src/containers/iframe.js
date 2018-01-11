@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { AceEditor } from './index.js';
+import { AceEditor, Box } from './index.js';
 import bowser from 'bowser'
 
 export default class Iframe extends Component {

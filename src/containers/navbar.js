@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../logo.svg';
 
-export default function Navbar(props) {
+export default function Navbar() {
     return (
         <div className="hero-head">
             <nav className="navbar">
@@ -38,9 +38,9 @@ export default function Navbar(props) {
                                     <a href="/projects/merchantjs" id="merchantjs" className="navbar-item">
                                         merchant.js
                                     </a>
-                                    <a href="/projects/battleship" id="battleship" className="navbar-item">
+                                    {/* <a href="/projects/battleship" id="battleship" className="navbar-item">
                                         battleship
-                                    </a>
+                                    </a> */}
                                     <a href="/projects/starbook" id="starbook" className="navbar-item">
                                         starbook
                                     </a>
