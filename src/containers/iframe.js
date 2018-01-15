@@ -119,7 +119,7 @@ export default class Iframe extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="column is-10 is-centered" id="frame">
+                <div className="column is-centered" id="frame">
                     <Description project={match.params.project} />
                 </div>
             </div >
