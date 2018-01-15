@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { AceEditor, Box } from './index.js';
+import { AceEditor, Description } from './index.js';
 import bowser from 'bowser'
 
 export default class Iframe extends Component {
@@ -29,7 +29,7 @@ export default class Iframe extends Component {
                 github = "https://github.com/radovandelic/rankerjs";
                 break;
             case "merchantjs":
-                url = "httos://merchantjs.herokuapp.com";
+                url = "https://merchantjs.herokuapp.com";
                 github = "https://github.com/radovandelic/merchantjs";
                 break;
             case "battleship":
@@ -57,7 +57,7 @@ export default class Iframe extends Component {
         document.getElementById(tab).classList.add("is-active");
         switch (tab) {
             case "description":
-                ReactDOM.render(<iframe title={match.params.project} src={this.state.url}></iframe>, document.getElementById("frame"));
+                ReactDOM.render(<Description project={match.params.project} />, document.getElementById("frame"));
                 break;
             case "demo":
                 ReactDOM.render(<iframe title={match.params.project} src={this.state.url}></iframe>, document.getElementById("frame"));
@@ -88,32 +88,7 @@ export default class Iframe extends Component {
         } else if (bowser.opera) {
             browserIcon = "fa fa-opera";
         }
-        var url = "https://philarios.ml";
-        switch (match.params.project) {
-            case "philarios":
-                url = "https://philarios.ml";
-                break;
-            case "holmichapp":
-                url = "https://holmichapp.herokuapp.com";
-                break;
-            case "rankerjs":
-                url = "https://rankerjs.herokuapp.com";
-                break;
-            case "merchantjs":
-                url = "https://merchantjs.herokuapp.com";
-                break;
-            case "battleship":
-                url = "https://battleships.gq"
-                break;
-            case "starbook":
-                url = "https://radovandelic.github.io/starbook";
-                break;
-            case "cleancalc":
-                url = "https://radovandelic.github.io/cleancalc";
-                break;
-            default:
-                break;
-        }
+
         return (
             <div className="container has-addons-centered" id="iframe">
                 <div className="tabs is-small is-toggle is-centered">
@@ -145,7 +120,7 @@ export default class Iframe extends Component {
                     </ul>
                 </div>
                 <div className="column is-10 is-centered" id="frame">
-                    <iframe title={match.params.project} src={url}></iframe>
+                    <Description project={match.params.project} />
                 </div>
             </div >
         )

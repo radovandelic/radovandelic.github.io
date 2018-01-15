@@ -42,3 +42,20 @@ iframe {
 .container {
   padding: 0;
 }
+
+.tech-tags li {
+  display: inline-block;
+  overflow: hidden;
+  padding: 4px 10px;
+  color: #FFF;
+}
+
+.tech-tags a {
+  display: inline-block;
+  background-color: rgba(175,34,34,.8);
+  color: #FFF;
+  padding: 4px 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

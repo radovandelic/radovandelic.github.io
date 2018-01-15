@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/landing.css';
-import { Navbar, Text, Iframe, Box, LinkedIn } from './containers';
+import { Navbar, Text, Iframe, LinkedIn } from './containers';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
