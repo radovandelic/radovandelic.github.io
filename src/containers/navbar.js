@@ -53,7 +53,7 @@ export default function Navbar() {
                                 Contact
                             </a>
                             <span className="navbar-item">
-                                <a className="button is-white is-outlined is-small" href="https://github.com/radovandelic/radovandelic.github.io/tree/source">
+                                <a className="button is-white is-outlined is-small" href="https://github.com/radovandelic/radovandelic.github.io/tree/source" rel="noopener noreferrer nofollow" target="_blank">
                                     <span className="icon">
                                         <i className="fa fa-github"></i>
                                     </span>
