@@ -5,5 +5,6 @@ import Iframe from './iframe';
 import Text from './text';
 import AceEditor from './aceeditor';
 import LinkedIn from './linkedin';
+import TreeView from './treeview';
 
-export { Description, Switch, Navbar, Iframe, Text, AceEditor, LinkedIn };
+export { Description, Switch, Navbar, Iframe, Text, AceEditor, LinkedIn, TreeView };

@@ -59,3 +59,7 @@ iframe {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+#editor {
+  clear: left;
+}

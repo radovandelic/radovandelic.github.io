@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { AceEditor, Description } from './index.js';
+import { Description, TreeView } from './index.js';
 import bowser from 'bowser'
 
 export default class Iframe extends Component {
@@ -63,7 +63,7 @@ export default class Iframe extends Component {
                 ReactDOM.render(<iframe title={match.params.project} src={this.state.url}></iframe>, document.getElementById("frame"));
                 break;
             case "code":
-                ReactDOM.render((<div id="editor"> <AceEditor /> </div>), document.getElementById("frame"));
+                ReactDOM.render(<TreeView />, document.getElementById("frame"));
                 break;
             case "github":
                 window.open(this.state.github, '_blank');

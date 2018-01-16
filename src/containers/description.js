@@ -8,13 +8,13 @@ export default function Description(props) {
     var contributors = descriptions[project].contributors ? descriptions[project].contributors.map((contributor, index) => {
         return <li key={index}>
             <a href={contributor.linkedin} rel="noopener noreferrer nofollow" target="_blank">
-                {contributor.name}
+                {contributor.name}&nbsp;
             </a>
             <a href={contributor.linkedin} rel="noopener noreferrer nofollow" target="_blank">
                 <span className="icon is-small"><i className="fa fa-linkedin-square"></i></span>
-            </a>
+            </a>&nbsp;
             <a href={contributor.github} rel="noopener noreferrer nofollow" target="_blank">
-                <span className="icon is-small"><i className="fa fa-github-square"></i></span>
+                <span className="icon is-small"><i className="fa fa-github-square"></i> </span>
             </a> {contributor.role}
         </li>;
     }) : null;
