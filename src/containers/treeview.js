@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleRoot } from 'radium';
 import { Treebeard, decorators } from 'react-treebeard';
 
-import data from '../data/folder';
 import styles from '../treeview_styles';
 import * as filters from '../filter';
 import AceEditor from './aceeditor';
@@ -25,14 +24,16 @@ decorators.Header = ({ style, node }) => {
 };
 
 export default class TreeView extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
-        this.state = { data };
+        this.state = { data: this.props.data };
         this.onToggle = this.onToggle.bind(this);
     }
 
     onToggle(node, toggled) {
+        var ace = window.ace;
+        const editor = ace.edit("editor");
         const { cursor } = this.state;
 
         if (cursor) {
@@ -43,13 +44,17 @@ export default class TreeView extends React.Component {
         if (node.children) {
             node.toggled = toggled;
         } else {
-            //get file
+            fetch(node.path)
+                .then(res => { return res.text(); })
+                .then(res => { editor.setValue(res); editor.gotoLine(1); })
+                .catch(err => { console.log(err); })
         }
 
         this.setState({ cursor: node });
     }
 
     onFilterMouseUp(e) {
+        var data = this.props.data;
         const filter = e.target.value.trim();
         if (!filter) {
             return this.setState({ data });

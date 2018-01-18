@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Description, TreeView } from './index.js';
-import bowser from 'bowser'
+import bowser from 'bowser';
+import dirTree from '../data/directorytree.json';
+
+var browserIcon = "fa fa-chrome";
+if (bowser.msie && bowser.version <= 6) {
+    browserIcon = "fa fa-internet-explorer";
+} else if (bowser.firefox) {
+    browserIcon = "fa fa-firefox";
+} else if (bowser.safari) {
+    browserIcon = "fa fa-safari";
+} else if (bowser.opera) {
+    browserIcon = "fa fa-opera";
+}
 
 export default class Iframe extends Component {
     constructor(props) {
@@ -59,18 +71,29 @@ export default class Iframe extends Component {
             case "description":
                 ReactDOM.render(<Description project={match.params.project} />, document.getElementById("frame"));
                 break;
+
             case "demo":
                 ReactDOM.render(<iframe title={match.params.project} src={this.state.url}></iframe>, document.getElementById("frame"));
                 break;
+
             case "code":
-                ReactDOM.render(<TreeView />, document.getElementById("frame"));
+                ReactDOM.render(<TreeView data={dirTree[match.params.project]} />, document.getElementById("frame"), () => {
+                    var ace = window.ace;
+                    const editor = ace.edit("editor");
+                    fetch(dirTree[match.params.project].entry)
+                        .then(res => { return res.text(); })
+                        .then(res => { editor.setValue(res); editor.gotoLine(1); })
+                        .catch(err => { console.log(err); })
+                });
                 break;
+
             case "github":
                 window.open(this.state.github, '_blank');
                 if (this.state.github === "https://github.com/radovandelic/apocryphon") {
                     window.open("https://github.com/radovandelic/philarios", '_blank');
                 }
                 break;
+
             default:
                 break;
         }
@@ -78,16 +101,6 @@ export default class Iframe extends Component {
 
     render() {
         var { match } = this.props;
-        var browserIcon = "fa fa-chrome";
-        if (bowser.msie && bowser.version <= 6) {
-            browserIcon = "fa fa-internet-explorer";
-        } else if (bowser.firefox) {
-            browserIcon = "fa fa-firefox";
-        } else if (bowser.safari) {
-            browserIcon = "fa fa-safari";
-        } else if (bowser.opera) {
-            browserIcon = "fa fa-opera";
-        }
 
         return (
             <div className="container has-addons-centered" id="iframe">
