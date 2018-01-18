@@ -1,0 +1,29 @@
+{
+  "name": "image_ranker",
+  "version": "1.0.0",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radovandelic/rankerjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radovandelic/rankerjs/issues"
+  },
+  "homepage": "http://rankerjs.herokuapp.com",
+  "dependencies": {
+    "cloudinary": "^1.9.1",
+    "compression": "^1.7.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "imgix-core-js": "^1.1.1",
+    "mongoose": "^4.12.3"
+  },
+  "description": ""
+}
