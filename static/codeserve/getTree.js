@@ -18,13 +18,13 @@ const merchantjs = dirTree(__dirname + "/" + 'merchantjs', { exclude: /(\.git$|\
 const starbook = dirTree(__dirname + "/" + 'starbook', { exclude: /(\.git$|\.gitignore$)/ });
 const cleancalc = dirTree(__dirname + "/" + 'cleancalc', { exclude: /(\.git$|\.gitignore$)/ });
 
-philarios.children[0].toggled = true; philarios.children[0].children[12].toggled = true;
+philarios.children[0].toggled = true; philarios.children[0].children[11].toggled = true;
 philarios.entry = '../static/codeserve/apocryphon/src/index.js';
-philarios.children[0].children[12].children[6].active = true;
+philarios.children[0].children[11].children[6].active = true;
 
 holmichapp.children[7].toggled = true;
 holmichapp.entry = '../static/codeserve/holmichapp/src/index.js';
-holmichapp.children[7].children[7].active = true;
+holmichapp.children[7].children[6].active = true;
 
 rankerjs.children[1].toggled = true;
 rankerjs.entry = '../static/codeserve/rankerjs/app/app.js';
