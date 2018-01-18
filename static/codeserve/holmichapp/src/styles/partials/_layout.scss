@@ -1,0 +1,445 @@
+@import './_colors.scss';
+
+@mixin transition {
+  transition: .15s all linear;
+}
+
+@mixin headerIcon($code) {
+  content: $code;
+  font-family: "Fontawesome";
+  font-size: 145%;
+  margin-right: 5px;
+}
+@mixin inputBorder {
+  outline: none;
+  border: 1px solid rgba($col3, .5);
+  border-radius: 2px;
+  @include transition;
+}
+@mixin inputBorderHover {
+  border: 1px solid $col3;
+}
+// reset some things first
+input,
+button,
+select {
+  outline: none;
+}
+button,
+select {
+  cursor: pointer;
+}
+$font_sm: 9px;
+$font_m: 13px;
+$font_l: 17px;
+$font_xl: 21px;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  line-height: 1.15;
+}
+// firefox arrow fix
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  //background: url('images/select-arrow-down-red.png') right / 20px no-repeat #fff;
+  padding-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// lines
+hr {
+  background: #dedede3d;
+  width: 100%;
+  margin: 20px 0;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: $col1;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;  
+  font-size: $font_m;
+  line-height: 1.15;
+  color: $col5;
+}
+#root {
+  display: flex;
+  //height: 100vh;
+  justify-content: center;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  
+  //height: 100vh;
+  flex: 1;
+  max-width: 1000px;
+  
+  box-shadow: 0 2px 13px #b9b9b9;
+
+  & .content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    & .subtitle {
+      font-weight: bold; 
+      font-size: 115%;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    & .text {
+      padding-bottom: 5px;
+    }
+    & form {
+      max-width: 400px;
+    }
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+  font-size: $font_l;
+  
+  background: $col5;
+  color: $col5_c;    
+  box-shadow: 0 4px 8px -2px rgba(5, 62, 57, 0.8);
+  z-index: 1;
+  
+  & .appname {
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: "\f232";
+      font-family: 'Fontawesome';
+      font-size: 130%;
+  }
+    
+    & .title_slogan {
+      margin-left: 10px;
+      text-transform: uppercase;
+      & .title {
+        font-weight: bold;
+      }
+      & .slogan {
+        font-size: $font_sm;
+      }
+    }
+  }
+  & .links {
+    font-size: $font_m;
+    display: flex;
+    align-items: center;
+
+    & div {
+      display: flex;
+      & .login-register {
+        flex: 1;
+        display: flex;
+        
+        & a {
+          flex: 1;
+        }
+      }
+      & a {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        margin-right: 2px;
+        border-radius: 2px;
+        @include transition;
+  
+        &:hover,
+        &.active {
+          background: $col3_c;
+          color: $col3;
+        }
+        &.login {
+          &::before {
+            @include headerIcon("\F007")
+          }
+        }
+        &.register {
+          &::before {
+            @include headerIcon("\F234")
+          }
+        }
+        &.route {
+          &::before {
+            @include headerIcon("\F277")
+          }
+        }
+        &.profile {
+          &::before {
+            @include headerIcon("\f14e")
+          }
+        }
+      }
+    }
+    & .language-switcher {
+      border: 1px solid $col3_c;
+      color: $col3;
+      max-width: 150px;
+      padding: 5px;
+    }
+  }
+}
+
+.map-complete {
+  flex: 1;
+
+  display: flex;
+  //flex-direction: column;
+
+  & .map-infos {
+    width: 300px;
+    padding: 20px;
+
+    box-shadow: 12px 0px 10px -8px #c5c5c5;
+    z-index: 1;
+    box-sizing: border-box;
+    
+    & > .title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: $col3;
+    }
+
+    & .map-address-input {
+      display: flex;
+      flex-direction: column;
+      
+      & .title {
+        text-align: center;        
+      }
+      & > .label {
+        text-align: center;
+        margin: 7px 0 3px 0;
+      }
+      & #PlacesAutocomplete__root {
+        flex: 1;
+
+        display: flex;
+        margin-bottom: 10px;
+        
+        & button {
+          padding: 10px !important;
+        }
+      }
+    }
+    & .textarea {
+      width: 100% !important;
+      min-width: 100% !important;
+      max-width: 100% !important;
+      min-height: 125px;
+    }
+    
+    & .share-buttons {
+      display: flex;
+      justify-content: center;    
+      flex-wrap: wrap;
+      text-align: center;
+      & .title {
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 0;
+      }
+      & .button {
+        padding: 5px;  
+      }
+    }
+  }
+  & .map {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+
+    & .map-layout {
+      height: 100%; 
+      position: relative; 
+      overflow: hidden;
+    }
+  }
+  & .map-element {
+    flex: 1;
+  }
+}
+
+.language-switcher {
+  border: 1px solid $col3;
+  color: $col3;
+  max-width: 150px;
+  padding: 5px;
+}
+.login-form {
+  & form {
+    display: flex;
+    flex-direction: column;
+    & .input {
+      margin-bottom: 10px;
+      border: 1px solid $col1;
+    }
+  }
+}
+
+.date-time-picker {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+
+  & .label {
+    text-align: center;
+    margin-bottom: 3px;
+  }
+  
+  & .date-picker,
+  & .time-picker {
+    display: flex;
+    & select {
+      margin-bottom: 10px;
+      border: 1px solid $col3;
+      color: $col3;
+      max-width: 150px;
+      padding: 5px;
+      flex: 1;
+      margin-right: 7px;
+
+      @include inputBorder;
+      
+      &:hover {
+        @include inputBorderHover;
+      }
+    }
+    & select:last-of-type {
+      margin-right: 0;
+    }
+  }
+  & .time-picker {
+    justify-content: center;
+
+    & select {
+      flex: initial;
+    }
+  }
+}
+
+.stepper {
+	display: flex;
+  flex-direction: column;
+  @include transition;
+	
+	& .row {
+		display: flex;
+		align-items: center;
+		flex: 1;
+
+    position: relative;
+    color: $col1;
+    cursor: pointer;
+
+    @include transition;
+    & div {
+      pointer-events: none;
+    }
+    
+    &:hover {
+      opacity: 1;
+      color: $col5;
+      & .list:before {
+        border-color: $col5;
+        border-width: 3px;
+      }
+    }
+		
+		&:before {
+			content: "";
+			width: 2px;
+			background: $col1;
+			position: absolute;
+			left: 24px;
+			height: 100%;
+		}
+		&:first-child:before {
+			top: 50%;
+			height: 50%;
+		}
+		&:last-child:before {
+			bottom: 50%;
+			height: 50%;
+		}
+		& .list {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 25px;
+			min-width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			border: 2px solid $col1;
+			background: white;
+			margin: 10px;	
+
+			position: relative;
+			z-index: 1;
+			
+			&:before {
+				content: "";
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+        background: $col1;
+			}
+			&.done:before {
+
+			}
+		}
+		& .text {
+			padding: 0;
+    }
+    &.done {
+      color: $col5;
+      & .list:before {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				content: "";
+				width: 5px;
+				height: 10px;
+				border-color: $col5;
+				color: $col3;
+				border-style: solid;
+				border-width: 0px 3px 3px 0px;
+				transform: rotate(45deg) scale(1.1);
+				background: transparent;
+				border-radius: initial;
+        margin-top: -3px;
+        animation:  .4s stepDone linear forwards;
+      }
+      @keyframes stepDone {
+        from {
+          transform: rotate(45deg) scale(.2,.2);
+        }
+        85% {
+          transform: rotate(45deg) scale(1.1,1.1);
+        }
+        to {
+          transform: rotate(45deg) scale(1.1);
+        }
+      }
+    }
+	}
+}
