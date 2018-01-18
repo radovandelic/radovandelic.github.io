@@ -152,13 +152,6 @@
                         "type": "file"
                     },
                     {
-                        "path": "../static/codeserve/apocryphon/package.json~",
-                        "name": "package.json~",
-                        "size": 1254,
-                        "extension": ".json~",
-                        "type": "file"
-                    },
-                    {
                         "path": "../static/codeserve/apocryphon/public",
                         "name": "public",
                         "children": [
@@ -2548,7 +2541,7 @@
                         "toggled": true
                     }
                 ],
-                "size": 4226190,
+                "size": 4224936,
                 "type": "directory",
                 "toggled": true
             },
@@ -5807,15 +5800,15 @@
                         "name": "index.js",
                         "size": 389,
                         "extension": ".js",
-                        "type": "file"
+                        "type": "file",
+                        "active": true
                     },
                     {
                         "path": "../static/codeserve/holmichapp/src/logo.svg",
                         "name": "logo.svg",
                         "size": 2671,
                         "extension": ".svg",
-                        "type": "file",
-                        "active": true
+                        "type": "file"
                     },
                     {
                         "path": "../static/codeserve/holmichapp/src/redux",
