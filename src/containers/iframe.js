@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { Description, TreeView } from './index.js';
 import bowser from 'bowser';
 import dirTree from '../data/directorytree.json';
@@ -20,14 +19,62 @@ export default class Iframe extends Component {
         super(props);
 
         this.state = {
+            active: "description",
+            project: "philarios",
             url: "https://philarios.ml"
         };
     }
     componentDidMount = () => {
-        var { match } = this.props;
+        var script = document.createElement("script");
+        script.id = "acescript";
+        script.type = "text/javascript";
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js';
+        script.integrity = "sha256-U//RSeH3TR3773Rk+1lAufJnRjEaG5LcdbvGV72kHEM=";
+        script.crossOrigin = "anonymous";
+        document.getElementsByTagName("head")[0].appendChild(script);
+
+        script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ext-language_tools.js';
+        script.integrity = "sha256-lWjFoKJOA8E3lXU/1gCNhbDX6rCwzfwd0BJpy620TZ4=";
+        script.crossOrigin = "anonymous";
+        document.getElementsByTagName("head")[0].appendChild(script);
+
+    }
+
+    changeActive = (tab) => {
+        if (tab !== 'github' && document.getElementsByClassName("is-active")) {
+            document.getElementsByClassName("is-active")[0].classList.remove("is-active");
+            document.getElementById(tab).classList.add("is-active");
+        }
+        switch (tab) {
+            case "description":
+                this.setState({ active: 'description' });
+                break;
+
+            case "demo":
+                this.setState({ active: 'demo' });
+                break;
+
+            case "code":
+                this.setState({ active: 'code' });
+                break;
+
+            case "github":
+                window.open(this.state.github, '_blank');
+                if (this.state.github === "https://github.com/radovandelic/apocryphon") {
+                    window.open("https://github.com/radovandelic/philarios", '_blank');
+                }
+                break;
+
+            default:
+                break;
+        }
+    }
+    changeProject = (newProject) => {
         var url = "https://philarios.ml";
         var github = "https://github.com/radovandelic";
-        switch (match.params.project) {
+        switch (newProject) {
             case "philarios":
                 url = "https://philarios.ml";
                 github = "https://github.com/radovandelic/apocryphon";
@@ -49,82 +96,66 @@ export default class Iframe extends Component {
                 github = "https://github.com/radovandelic/apocryphon";
                 break;
             case "starbook":
-                url = "https://radovandelic.github.io/starbook";
+                url = "https://starbook.bitballoon.com";
                 github = "https://github.com/radovandelic/starbook";
                 break;
             case "cleancalc":
-                url = "https://radovandelic.github.io/cleancalc";
+                url = "https://cleancalc.bitballoon.com";
                 github = "https://github.com/radovandelic/cleancalc";
                 break;
             default:
                 break;
         }
-        this.setState({ url: url, github: github });
+        this.changeActive('description');
+        this.setState({ url: url, github: github, project: newProject });
 
-    }
-
-    changeElement = (tab) => {
-        var { match } = this.props;
-        document.getElementsByClassName("is-active")[0].classList.remove("is-active");
-        document.getElementById(tab).classList.add("is-active");
-        switch (tab) {
-            case "description":
-                ReactDOM.render(<Description project={match.params.project} />, document.getElementById("frame"));
-                break;
-
-            case "demo":
-                ReactDOM.render(<iframe title={match.params.project} src={this.state.url}></iframe>, document.getElementById("frame"));
-                break;
-
-            case "code":
-                ReactDOM.render(<TreeView data={dirTree[match.params.project]} />, document.getElementById("frame"), () => {
-                    var ace = window.ace;
-                    const editor = ace.edit("editor");
-                    fetch(dirTree[match.params.project].entry)
-                        .then(res => { return res.text(); })
-                        .then(res => { editor.setValue(res); editor.gotoLine(1); })
-                        .catch(err => { console.log(err); })
-                });
-                break;
-
-            case "github":
-                window.open(this.state.github, '_blank');
-                if (this.state.github === "https://github.com/radovandelic/apocryphon") {
-                    window.open("https://github.com/radovandelic/philarios", '_blank');
-                }
-                break;
-
-            default:
-                break;
-        }
     }
 
     render() {
         var { match } = this.props;
+        var frame = null;
+        if (this.state.project !== match.params.project) {
+            this.changeProject(match.params.project)
+        }
+
+        switch (this.state.active) {
+            case 'description':
+                frame = <Description project={this.state.project} />;
+                break;
+            case 'demo':
+                frame = <iframe className="column is-9 is-centered" title={match.params.project} src={this.state.url}></iframe>;
+                break;
+            case 'code':
+                frame = <TreeView data={dirTree[match.params.project]} />;
+                break;
+            default:
+                frame = <Description project={match.params.project} />;
+                break;
+        }
 
         return (
             <div className="container has-addons-centered" id="iframe">
                 <div className="tabs is-small is-toggle is-centered">
                     <ul>
-                        <li className="is-active" id="description" onClick={e => { this.changeElement("description"); }}>
+                        <li className="is-active" id="description" onClick={e => { this.changeActive("description"); }}>
                             <a>
                                 <span className="icon is-small"><i className="fa fa-file-text-o"></i></span>
                                 <span>Description</span>
                             </a>
                         </li>
-                        <li id="demo" onClick={e => { this.changeElement("demo"); }}>
+                        <li id="demo" onClick={e => { this.changeActive("demo"); }}>
                             <a>
                                 <span className={"icon is-small"}><i className={browserIcon}></i></span>
                                 <span>Demo</span>
                             </a>
                         </li>
-                        <li id="code" onClick={e => { this.changeElement("code"); }}>
+                        <li id="code" onClick={e => { this.changeActive("code"); }}>
                             <a>
                                 <span className="icon is-small"><i className="fa fa-code"></i></span>
                                 <span>Code</span>
                             </a>
                         </li>
-                        <li id="github" onClick={e => { this.changeElement("github"); }}>
+                        <li id="github" onClick={e => { this.changeActive("github"); }}>
                             <a>
                                 <span className="icon is-small"><i className="fa fa-github"></i></span>
                                 <span>Github</span>
@@ -132,8 +163,8 @@ export default class Iframe extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="column is-centered" id="frame">
-                    <Description project={match.params.project} />
+                <div className="columns is-centered" id="frame">
+                    {frame}
                 </div>
             </div >
         )

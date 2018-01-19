@@ -27,7 +27,7 @@ export default function Description(props) {
     });
 
     return (
-        <div className="box is-centered">
+        <div className="box column is-9 is-centered">
             <article className="media">
                 <div className="media-left">
                     <figure className="image is-64x64">

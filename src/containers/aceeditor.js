@@ -16,12 +16,12 @@ export default class AceEditor extends Component {
     componentDidMount() {
         var ace = window.ace;
         const editor = ace.edit("editor");
-        editor.setTheme("ace/theme/twilight");
+        editor.setTheme("ace/theme/vibrant_ink");
         ace.require("ace/ext/language_tools");
-        editor.getSession().setMode("ace/mode/javascript");
         editor.setShowPrintMargin(false);
         editor.setOptions({ enableLiveAutocompletion: true, enableSnippets: true });
-        editor.setOptions({ minLines: 15, maxLines: 35 })
+        editor.setOptions({ minLines: 15, maxLines: 35 });
+        editor.$blockScrolling = Infinity;
     }
 
     render() {

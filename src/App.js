@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/landing.css';
 import { Navbar, Intro, Iframe, LinkedIn } from './containers';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 class App extends Component {
@@ -20,9 +20,11 @@ class App extends Component {
           <Navbar navigation={this.navigation} />
 
           <div className="hero-body">
-            <Route exact path="/" component={Intro} />
-            <Route path="/projects/:project" component={Iframe} />
-            <Route exact path="/contact" component={LinkedIn} />
+            <Switch>
+              <Route exact path="/" component={Intro} />
+              <Route path="/projects/:project" component={Iframe} />
+              <Route exact path="/contact" component={LinkedIn} />
+            </Switch>
           </div>
         </section>
       </Router>

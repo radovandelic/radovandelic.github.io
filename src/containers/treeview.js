@@ -30,10 +30,67 @@ export default class TreeView extends React.Component {
         this.state = { data: this.props.data };
         this.onToggle = this.onToggle.bind(this);
     }
+    componentDidMount = () => {
+        this.getCode(this.state.data.entry);
+    }
 
-    onToggle(node, toggled) {
-        var ace = window.ace;
+    getCode = (path) => {
+        const ace = window.ace;
         const editor = ace.edit("editor");
+        var extension = path.split('.')[path.split('.').length - 1];
+        switch (extension) {
+            case 'js':
+                editor.getSession().setMode("ace/mode/javascript");
+                break;
+            case 'html':
+                editor.getSession().setMode("ace/mode/html");
+                break;
+            case 'ejs':
+                editor.getSession().setMode("ace/mode/ejs");
+                break;
+            case 'css':
+                editor.getSession().setMode("ace/mode/css");
+                break;
+            case 'json':
+                editor.getSession().setMode("ace/mode/json");
+                break;
+            case 'md':
+                editor.getSession().setMode("ace/mode/markdown");
+                break;
+            case 'scss':
+                editor.getSession().setMode("ace/mode/scss");
+                break;
+            case 'sql':
+                editor.getSession().setMode("ace/mode/sql");
+                break;
+            case 'cs':
+                editor.getSession().setMode("ace/mode/csharp");
+                break;
+            case 'php':
+                editor.getSession().setMode("ace/mode/php");
+                break;
+            case 'svg':
+                editor.getSession().setMode("ace/mode/svg");
+                break;
+            default:
+                editor.getSession().setMode("ace/mode/sh");
+                break;
+        }
+        fetch(path)
+            .then(res => { return res.text(); })
+            .then(res => {
+                editor.setValue(res);
+                editor.gotoLine(1);
+                if (extension === 'js' && res.includes('react')) {
+                    editor.getSession().setMode("ace/mode/jsx");
+                } else if (extension === 'js') {
+                    editor.getSession().setMode("ace/mode/javascript");
+                }
+            })
+            .catch(err => { console.log(err); })
+
+    }
+    onToggle(node, toggled) {
         const { cursor } = this.state;
 
         if (cursor) {
@@ -44,10 +101,7 @@ export default class TreeView extends React.Component {
         if (node.children) {
             node.toggled = toggled;
         } else {
-            fetch(node.path)
-                .then(res => { return res.text(); })
-                .then(res => { editor.setValue(res); editor.gotoLine(1); })
-                .catch(err => { console.log(err); })
+            this.getCode(node.path);
         }
 
         this.setState({ cursor: node });
@@ -77,7 +131,7 @@ export default class TreeView extends React.Component {
                             </span>
                             <input className="form-control"
                                 onKeyUp={this.onFilterMouseUp.bind(this)}
-                                placeholder="Search project..."
+                                placeholder="Find..."
                                 type="text" />
                         </div>
                     </div>

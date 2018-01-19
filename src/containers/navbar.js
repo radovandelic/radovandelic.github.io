@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../logo.svg';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -18,40 +19,47 @@ export default function Navbar() {
                     </div>
                     <div id="navbarMenu" className="navbar-menu">
                         <div className="navbar-end">
-                            <a href="/" className="navbar-item" id="home">
+                            <Link to="/" className="navbar-item" id="home" onClick={e => { document.getElementById('projects').innerHTML = 'Projects'; }}>
                                 Home
-                            </a>
+                            </Link>
                             <div className="navbar-item has-dropdown is-hoverable">
                                 <a className="navbar-link" id="projects">
                                     Projects
                                 </a>
                                 <div className="navbar-dropdown">
-                                    <a href="/projects/philarios" id="philarios" className="navbar-item">
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > philarios'; }}
+                                        to="/projects/philarios" id="philarios" className="navbar-item">
                                         philarios
-                                    </a>
-                                    <a href="/projects/holmichapp" id="holmichapp" className="navbar-item">
+                                    </Link>
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > holmichapp'; }}
+                                        to="/projects/holmichapp" id="holmichapp" className="navbar-item">
                                         holmichapp
-                                    </a>
-                                    <a href="/projects/rankerjs" id="rankerjs" className="navbar-item">
+                                    </Link>
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > rankerjs'; }}
+                                        to="/projects/rankerjs" id="rankerjs" className="navbar-item">
                                         ranker.js
-                                    </a>
-                                    <a href="/projects/merchantjs" id="merchantjs" className="navbar-item">
+                                    </Link>
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > merchantjs'; }}
+                                        to="/projects/merchantjs" id="merchantjs" className="navbar-item">
                                         merchant.js
-                                    </a>
-                                    {/* <a href="/projects/battleship" id="battleship" className="navbar-item">
+                                    </Link>
+                                    {/* <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > battleship'; }}
+                                        to="/projects/battleship" id="battleship" className="navbar-item">
                                         battleship
-                                    </a> */}
-                                    <a href="/projects/starbook" id="starbook" className="navbar-item">
+                                    </Link> */}
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > starbook'; }}
+                                        to="/projects/starbook" id="starbook" className="navbar-item">
                                         starbook
-                                    </a>
-                                    <a href="/projects/cleancalc" id="cleancalc" className="navbar-item">
+                                    </Link>
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > cleancalc'; }}
+                                        to="/projects/cleancalc" id="cleancalc" className="navbar-item">
                                         MVC calculator
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
-                            <a href="/contact" className="navbar-item" id="contact">
+                            <Link to="/contact" className="navbar-item" id="contact" onClick={e => { document.getElementById('projects').innerHTML = 'Projects'; }}>
                                 Contact
-                            </a>
+                            </Link>
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined is-small" href="https://github.com/radovandelic/radovandelic.github.io/tree/source" rel="noopener noreferrer nofollow" target="_blank">
                                     <span className="icon">
