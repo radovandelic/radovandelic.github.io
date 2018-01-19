@@ -49,7 +49,8 @@ const descriptions = {
                 name: "MongoDB",
                 url: "https://www.mongodb.com/"
             },
-        ]
+        ],
+        logo: "https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/400"
     },
     holmichapp: {
         url: "https://holmichapp.herokuapp.com/",
@@ -84,7 +85,8 @@ const descriptions = {
                 name: "MongoDB",
                 url: "https://www.mongodb.com/"
             },
-        ]
+        ],
+        logo: "https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/400"
     },
     rankerjs: {
         url: "https://rankerjs.herokuapp.com/",
@@ -119,7 +121,8 @@ const descriptions = {
                 name: "materialize.css",
                 url: "http://materializecss.com/"
             }
-        ]
+        ],
+        logo: "https://openfin.co/wp-content/uploads/2015/05/nodejs_logo.png"
     },
     merchantjs: {
         url: "https://merchantjs.herokuapp.com/",
@@ -150,7 +153,8 @@ const descriptions = {
                 name: "MongoDB",
                 url: "https://www.mongodb.com/"
             }
-        ]
+        ],
+        logo: "https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/400"
     },
     starbook: {
         url: "https://radovandelic.github.io/starbook/",
@@ -161,7 +165,8 @@ const descriptions = {
                 name: "javascript",
                 url: "http://vanilla-js.com/"
             }
-        ]
+        ],
+        logo: "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/082014/js1_0.png"
     },
     cleancalc: {
         url: "https://radovandelic.github.io/cleancalc/",
@@ -172,7 +177,8 @@ const descriptions = {
                 name: "javascript",
                 url: "http://vanilla-js.com/"
             }
-        ]
+        ],
+        logo: "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/082014/js1_0.png"
     }
 }
 

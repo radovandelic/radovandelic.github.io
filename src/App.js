@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/landing.css';
-import { Navbar, Text, Iframe, LinkedIn } from './containers';
+import { Navbar, Intro, Iframe, LinkedIn } from './containers';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
@@ -20,7 +20,7 @@ class App extends Component {
           <Navbar navigation={this.navigation} />
 
           <div className="hero-body">
-            <Route exact path="/" component={Text} />
+            <Route exact path="/" component={Intro} />
             <Route path="/projects/:project" component={Iframe} />
             <Route exact path="/contact" component={LinkedIn} />
           </div>

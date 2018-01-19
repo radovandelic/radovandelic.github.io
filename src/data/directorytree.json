@@ -2111,13 +2111,6 @@
                                         "type": "file"
                                     },
                                     {
-                                        "path": "../static/codeserve/apocryphon/server/config/keys.js",
-                                        "name": "keys.js",
-                                        "size": 71,
-                                        "extension": ".js",
-                                        "type": "file"
-                                    },
-                                    {
                                         "path": "../static/codeserve/apocryphon/server/config/passport.js",
                                         "name": "passport.js",
                                         "size": 453,

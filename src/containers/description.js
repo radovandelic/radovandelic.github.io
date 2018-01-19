@@ -5,6 +5,7 @@ export default function Description(props) {
     var project = props.project;
     var url = descriptions[project].url; var github = descriptions[project].github;
     var text = descriptions[project].text;
+    var logo = descriptions[project].logo;
     var contributors = descriptions[project].contributors ? descriptions[project].contributors.map((contributor, index) => {
         return <li key={index}>
             <a href={contributor.linkedin} rel="noopener noreferrer nofollow" target="_blank">
@@ -30,7 +31,7 @@ export default function Description(props) {
             <article className="media">
                 <div className="media-left">
                     <figure className="image is-64x64">
-                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="placeholder" />
+                        <img src={logo} alt="placeholder" />
                     </figure>
                 </div>
                 <div className="media-content">
