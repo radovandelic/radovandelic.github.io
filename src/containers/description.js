@@ -12,10 +12,10 @@ export default function Description(props) {
                 {contributor.name}&nbsp;
             </a>
             <a href={contributor.linkedin} rel="noopener noreferrer nofollow" target="_blank">
-                <span className="icon is-small"><i className="fa fa-linkedin-square"></i></span>
+                <span className="icon is-small"><i className="fa fa-linkedin"></i></span>
             </a>&nbsp;
             <a href={contributor.github} rel="noopener noreferrer nofollow" target="_blank">
-                <span className="icon is-small"><i className="fa fa-github-square"></i> </span>
+                <span className="icon is-small"><i className="fa fa-github"></i> </span>
             </a> {contributor.role}
         </li>;
     }) : null;

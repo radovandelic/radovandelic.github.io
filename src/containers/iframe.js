@@ -43,7 +43,7 @@ export default class Iframe extends Component {
     }
 
     changeActive = (tab) => {
-        if (tab !== 'github' && document.getElementsByClassName("is-active")) {
+        if (tab !== 'github' && document.getElementsByClassName("is-active")[0]) {
             document.getElementsByClassName("is-active")[0].classList.remove("is-active");
             document.getElementById(tab).classList.add("is-active");
         }
