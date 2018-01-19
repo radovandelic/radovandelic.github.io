@@ -14,10 +14,6 @@ var techstack = [
         url: "https://reactjs.org/"
     },
     {
-        name: "Redux",
-        url: "https://redux.js.org/"
-    },
-    {
         name: "PostgreSQL",
         url: "https://www.postgresql.org/"
     },
