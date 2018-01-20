@@ -74,7 +74,7 @@ export default function Intro() {
                                     rel="noopener noreferrer nofollow" target="_blank">32/32</a></strong> perfect solutions.
                             <br />
                                 <br />
-                                Feel free to check out some of my open source projects in the navbar.
+                                Feel free to check out some of my demo projects in the navbar.
                             <br />
                                 <br />
                                 Q: What is my favorite language/framework?
