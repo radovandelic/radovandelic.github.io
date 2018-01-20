@@ -80,7 +80,7 @@ export default class Iframe extends Component {
                 github = "https://github.com/radovandelic/apocryphon";
                 break;
             case "holmichapp":
-                url = "https://holmichapp.herokuapp.com";
+                url = "https://holmichapp.herokuapp.com/route";
                 github = "https://github.com/radovandelic/holmichapp";
                 break;
             case "rankerjs":
@@ -123,7 +123,7 @@ export default class Iframe extends Component {
                 frame = <Description project={this.state.project} />;
                 break;
             case 'demo':
-                frame = <iframe className="column is-9 is-centered" title={match.params.project} src={this.state.url}></iframe>;
+                frame = <iframe className="column is-11 is-centered" title={match.params.project} src={this.state.url}></iframe>;
                 break;
             case 'code':
                 frame = <TreeView data={dirTree[match.params.project]} />;
@@ -134,7 +134,7 @@ export default class Iframe extends Component {
         }
 
         return (
-            <div className="container has-addons-centered" id="iframe">
+            <div className="container has-addons-centered" id="frame">
                 <div className="tabs is-small is-toggle is-centered">
                     <ul>
                         <li className="is-active" id="description" onClick={e => { this.changeActive("description"); }}>
@@ -163,7 +163,7 @@ export default class Iframe extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="columns is-centered" id="frame">
+                <div className="is-centered" id="iframe">
                     {frame}
                 </div>
             </div >

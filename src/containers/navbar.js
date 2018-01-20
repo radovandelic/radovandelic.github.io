@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (
         <div className="hero-head">
-            <nav className="navbar">
+            <nav className="navbar is-dark is-fixed-top">
                 <div className="container">
                     <div className="navbar-brand">
                         <a className="navbar-item" href="../">

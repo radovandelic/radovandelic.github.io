@@ -20,7 +20,7 @@ export default class AceEditor extends Component {
         ace.require("ace/ext/language_tools");
         editor.setShowPrintMargin(false);
         editor.setOptions({ enableLiveAutocompletion: true, enableSnippets: true });
-        editor.setOptions({ minLines: 15, maxLines: 35 });
+        editor.setOptions({ minLines: 15, maxLines: 42 });
         editor.$blockScrolling = Infinity;
     }
 

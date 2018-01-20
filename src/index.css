@@ -4,16 +4,9 @@ body {
   font-family: sans-serif;
 }
 
-
-#frame {
-  margin: auto;
-  padding: 0;
-}
-
 iframe {
   margin: auto;
-  height: 70vh;
-  width: 80vw;
+  height: 75vh;
   background: #FFFFFF;
 }
 
@@ -28,15 +21,11 @@ iframe {
 }  
 
 .navbar-dropdown {
-    background: black;
-}
-
-.box {
-    margin: auto;
+  background: black;
 }
 
 .linkedin {
-    margin: auto;
+  margin: auto;
 }
 
 .container {
@@ -62,4 +51,34 @@ iframe {
 
 #editor {
   clear: left;
+}
+
+#frame {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  right: 0;
+}
+
+#iframe {
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  right: 0;
+}
+
+#intro {
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  right: 0;
+}
+
+.box {
+  margin: auto;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: -3vh;
 }
