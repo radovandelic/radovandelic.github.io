@@ -171,7 +171,7 @@ const descriptions = {
     cleancalc: {
         url: "https://cleancalc.bitballoon.com/",
         github: "https://github.com/radovandelic/cleancalc/",
-        text: "A simple calculator app written in javascript and proper MVC architecture.",
+        text: "A simple calculator app written in javascript. This was my first app written in proper MVC architecture.",
         tech: [
             {
                 name: "javascript",

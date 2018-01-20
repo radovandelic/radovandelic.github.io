@@ -4,7 +4,7 @@ import { Treebeard, decorators } from 'react-treebeard';
 
 import styles from '../treeview_styles';
 import * as filters from '../filter';
-import AceEditor from './aceeditor';
+import AceEditor from './AceEditor';
 
 // Example: Customising The Header Decorator To Include Icons
 decorators.Header = ({ style, node }) => {

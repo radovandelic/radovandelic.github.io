@@ -1,11 +1,11 @@
-import Description from './description';
-import Switch from './switch';
-import Navbar from './navbar'
-import Iframe from './iframe';
-import Text from './text';
-import AceEditor from './aceeditor';
-import LinkedIn from './linkedin';
-import TreeView from './treeview';
-import Intro from './intro';
+import Description from './Description';
+import Switch from './Switch';
+import Navbar from './Navbar'
+import Iframe from './Iframe';
+import Text from './Text';
+import AceEditor from './AceEditor';
+import LinkedIn from './LinkedIn';
+import TreeView from './TreeView';
+import Intro from './Intro';
 
 export { Description, Switch, Navbar, Iframe, Text, AceEditor, LinkedIn, TreeView, Intro };

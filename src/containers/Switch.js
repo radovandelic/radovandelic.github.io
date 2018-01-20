@@ -1,7 +1,7 @@
 import React from 'react';
-import Iframe from './iframe';
-import Text from './text';
-import AceEditor from './aceeditor';
+import Iframe from './Iframe';
+import Text from './Text';
+import AceEditor from './AceEditor';
 
 export default function Switch(props) {
     console.log(props.navigation);

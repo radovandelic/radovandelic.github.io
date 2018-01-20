@@ -82,3 +82,8 @@ iframe {
   position: absolute;
   left: -3vh;
 }
+
+#linkedin-container {
+  height: 400px; 
+  width: 400px;
+}
