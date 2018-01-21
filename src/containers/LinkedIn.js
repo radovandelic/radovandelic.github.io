@@ -11,16 +11,11 @@ export default function LinkedIn() {/*
             <div className="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="radovan-delic" data-rendered="true" data-uid="379205">
                 <a className="LI-simple-link" href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge" rel="noopener noreferrer nofollow" target="_blank">loading...</a>
                 <div>
-                    {/* <script src="https://static.licdn.com/sc/h/3i9xa8rxa5azp4yvn22qw43kt" type="text/javascript"></script>
-                    <code id="__pageContext__" style={{ display: 'none' }}></code>
-                    <script src="https://static.licdn.com/sc/p/com.linkedin.badger-frontend%3Abadger-frontend-static-content%2B0.1.68/f/%2Fbadger-frontend%2Fsc-hashes%2Fsc-hashes_en_US.js">
-                    </script>
-                    <script src="https://static.licdn.com/sc/h/b6uw0t7trbjm204dq4z3o9e0u"></script> */}
                     <link rel="stylesheet" href="https://static.licdn.com/sc/h/2e1b81dfmyti45t4strx6bmw9" />
                     <div id="linkedin-container" dir="ltr" className="LI-badge-container-vertical-dark LI-badge-container vertical dark large" style={{ display: 'none' }} >
                         <div className="LI-profile-badge-header LI-name-container"><div className="LI-col">
                             <div className="LI-profile-pic-container" style={{ backgroundImage: 'url(https://static.licdn.com/sc/h/856xpihrituhwdjrua9z5u5na)' }}>
-                                <img src="https://dms.licdn.com/playlist/C5600AQELZbopb7wyqg/profile-displayphoto-shrink_200_200/0?e=1516543921&amp;v=alpha&amp;t=hV79bscO9RQ-eY7fYnXQSEEsZMtfIuWceNZ_R4guQpQ" className="LI-profile-pic" alt="Radovan Delić" />
+                                <img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAMABADGAAwAAQAAAAAAAA1SAAAAJGI5YmNkZTc4LWZkZTEtNDZiNS04MTEyLTUxYmYzMzZkMGQyZg.jpg" className="LI-profile-pic" alt="Radovan Delić" />
                             </div>
                         </div>
                             <div className="LI-col LI-header">
