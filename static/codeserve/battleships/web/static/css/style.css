@@ -1,0 +1,43 @@
+header {    
+      width: 80%;    
+      margin: 0 auto;    
+      text-align: center;    
+    }
+    
+    .container {    
+      width: 100%;    
+      margin: 0 auto; 
+      display: flex;   
+      justify-content: space-evenly;
+    }        
+    
+    table {    
+      border-collapse: collapse;    
+      margin: auto;    
+    }   
+    
+    
+    td {
+    border: 1px solid black;    
+    text-align: center;
+    width: 5vh;
+    height: 5vh;
+    }
+
+    .hit {
+      background-color: red;
+    }
+
+    .miss {
+      background-color: blue;
+    }
+
+ /*    .left {
+      display: inline-block;
+      margin: auto;
+    }
+
+    .right {
+      display: inline-block;
+      margin: auto;
+    }  */
