@@ -43,10 +43,10 @@ export default function Navbar() {
                                         to="/projects/merchantjs" id="merchantjs" className="navbar-item">
                                         merchant.js
                                     </Link>
-                                    {/* <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > battleship'; }}
-                                        to="/projects/battleship" id="battleship" className="navbar-item">
-                                        battleship
-                                    </Link> */}
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > battleships'; }}
+                                        to="/projects/battleships" id="battleships" className="navbar-item">
+                                        battleships
+                                    </Link>
                                     <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > starbook'; }}
                                         to="/projects/starbook" id="starbook" className="navbar-item">
                                         starbook

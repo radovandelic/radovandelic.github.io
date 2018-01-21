@@ -9,7 +9,7 @@ export default function LinkedIn() {/*
     return (
         <div className="linkedin">
             <div className="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="radovan-delic" data-rendered="true" data-uid="379205">
-                <a className="LI-simple-link" href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge">loading...</a>
+                <a className="LI-simple-link" href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge" rel="noopener noreferrer nofollow" target="_blank">loading...</a>
                 <div>
                     {/* <script src="https://static.licdn.com/sc/h/3i9xa8rxa5azp4yvn22qw43kt" type="text/javascript"></script>
                     <code id="__pageContext__" style={{ display: 'none' }}></code>
@@ -25,17 +25,25 @@ export default function LinkedIn() {/*
                         </div>
                             <div className="LI-col LI-header">
                                 <div className="LI-name">
-                                    <a href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge-name">Radovan Delić</a>
+                                    <a href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge-name" rel="noopener noreferrer nofollow" target="_blank">
+                                        Radovan Delić
+                                    </a>
                                 </div>
                                 <div className="LI-title">Full Stack Web Developer</div>
                             </div>
                         </div>
                         <br />
                         <ul className="more-info">
-                            <li className="LI-field"><a href="https://www.linkedin.com/edu/elium-academy-of-software-%26-entrepreneurship-3155094?trk=profile-badge-school">Elium Academy of Software &amp; Entrepreneurship</a></li>
+                            <li className="LI-field">
+                                <a href="https://www.linkedin.com/edu/elium-academy-of-software-%26-entrepreneurship-3155094?trk=profile-badge-school" rel="noopener noreferrer nofollow" target="_blank">
+                                    Elium Academy of Software &amp; Entrepreneurship
+                                </a>
+                            </li>
                         </ul>
                         <div className="LI-profile-badge-footer">
-                            <a href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge-cta" className="LI-view-profile">View profile</a>
+                            <a href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge-cta" className="LI-view-profile" rel="noopener noreferrer nofollow" target="_blank">
+                                View profile
+                            </a>
                             <span className="LI-logo">
                                 <img src="https://static.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_flat_white_93x21.png" alt="LinkedIn" className="LI-icon" />
                             </span>

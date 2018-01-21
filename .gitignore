@@ -15,7 +15,7 @@
 /public/static/codeserve/merchantjs
 /public/static/codeserve/starbook
 /public/static/codeserve/cleancalc
-/public/static/codeserve/batleship
+/public/static/codeserve/battleships
 
 # misc
 .DS_Store

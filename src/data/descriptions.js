@@ -156,6 +156,30 @@ const descriptions = {
         ],
         logo: "https://www.ethode.com/contentAsset/image/84e3be24-58bc-499c-9d50-f8088158f11a/image/filter/Resize/resize_w/400"
     },
+    battleships: {
+        url: "https://battleshipsjs.herokuapp.com/",
+        github: "https://github.com/radovandelic/battleship/",
+        text: "An online multiplayer battleship game.",
+        tech: [
+            {
+                name: "javascript",
+                url: "http://vanilla-js.com/"
+            },
+            {
+                name: "PHP",
+                url: "http://www.php.net/"
+            },
+            {
+                name: "Symfony",
+                url: "https://symfony.com/"
+            },
+            {
+                name: "PostgreSQL",
+                url: "https://www.postgresql.org/"
+            }
+        ],
+        logo: "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/082014/js1_0.png"
+    },
     starbook: {
         url: "https://starbook.bitballoon.com/",
         github: "https://github.com/radovandelic/starbook/",

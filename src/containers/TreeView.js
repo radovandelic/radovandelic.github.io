@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleRoot } from 'radium';
 import { Treebeard, decorators } from 'react-treebeard';
 
-import styles from '../treeview_styles';
-import * as filters from '../filter';
+import styles from '../css/treeview_styles';
+import * as filters from './filter';
 import AceEditor from './AceEditor';
 
 // Example: Customising The Header Decorator To Include Icons
@@ -101,7 +101,10 @@ export default class TreeView extends React.Component {
         if (node.children) {
             node.toggled = toggled;
         } else {
-            this.getCode(node.path);
+
+            if (!node.path.includes(".gitignore") && !node.path.includes(".htaccess")) {
+                this.getCode(node.path);
+            }
         }
 
         this.setState({ cursor: node });

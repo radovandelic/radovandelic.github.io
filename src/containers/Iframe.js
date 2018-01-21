@@ -21,7 +21,8 @@ export default class Iframe extends Component {
         this.state = {
             active: "description",
             project: "philarios",
-            url: "https://philarios.ml"
+            url: "https://philarios.ml",
+            github: "https://github.com/radovandelic/apocryphon"
         };
     }
     componentDidMount = () => {
@@ -91,9 +92,9 @@ export default class Iframe extends Component {
                 url = "https://merchantjs.herokuapp.com";
                 github = "https://github.com/radovandelic/merchantjs";
                 break;
-            case "battleship":
-                url = "https://battleships.gq";
-                github = "https://github.com/radovandelic/apocryphon";
+            case "battleships":
+                url = "https://battleshipsjs.herokuapp.com/";
+                github = "https://github.com/radovandelic/battleship";
                 break;
             case "starbook":
                 url = "https://starbook.bitballoon.com";
@@ -120,7 +121,7 @@ export default class Iframe extends Component {
 
         switch (this.state.active) {
             case 'description':
-                frame = <Description project={this.state.project} />;
+                frame = <Description project={match.params.project} />;
                 break;
             case 'demo':
                 frame = <iframe className="column is-11 is-centered" title={match.params.project} src={this.state.url}></iframe>;

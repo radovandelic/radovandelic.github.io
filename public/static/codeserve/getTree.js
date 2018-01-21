@@ -17,6 +17,7 @@ const rankerjs = dirTree(__dirname + "/" + 'rankerjs', { exclude: /(\.git$|\.git
 const merchantjs = dirTree(__dirname + "/" + 'merchantjs', { exclude: /(\.git$|\.gitignore$)/ });
 const starbook = dirTree(__dirname + "/" + 'starbook', { exclude: /(\.git$|\.gitignore$)/ });
 const cleancalc = dirTree(__dirname + "/" + 'cleancalc', { exclude: /(\.git$|\.gitignore$)/ });
+const battleships = dirTree(__dirname + "/" + 'battleships', { exclude: /(\.git$|\.gitignore$)/ });
 
 philarios.children[0].toggled = true; philarios.children[0].children[11].toggled = true;
 philarios.entry = '../static/codeserve/apocryphon/src/index.js';
@@ -40,8 +41,12 @@ starbook.children[0].active = true;
 cleancalc.entry = '../static/codeserve/cleancalc/index.html';
 cleancalc.children[2].active = true;
 
+battleships.children[4].toggled = true;
+battleships.entry = '../static/codeserve/battleships/web/index.php';
+battleships.children[4].children[2].active = true;
+
 const tree = {
-    philarios, holmichapp, rankerjs, merchantjs, starbook, cleancalc
+    philarios, holmichapp, rankerjs, merchantjs, starbook, cleancalc, battleships
 }
 
 for (var key in tree) {
