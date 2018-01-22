@@ -7,7 +7,7 @@ const recordVisit = (page) => {
                 var q = {
                     method: 'POST',
                     body: {
-                        location: `${res.city} ${res.postal}, ${res.country_code}`,
+                        location: res.city ? `${res.city} ${res.postal}, ${res.country_code}` : res.country_name,
                         page: page,
                         browser: window.navigator.userAgent,
                         ip: res.IPv4,
