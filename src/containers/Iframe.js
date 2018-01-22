@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Description, TreeView } from './index.js';
 import bowser from 'bowser';
 import dirTree from '../data/directorytree.json';
+import recordVisit from './recordVisit';
 
 var browserIcon = "fa fa-chrome";
 if (bowser.msie && bowser.version <= 6) {
@@ -121,12 +122,15 @@ export default class Iframe extends Component {
 
         switch (this.state.active) {
             case 'description':
+                recordVisit(match.params.project + "/description");
                 frame = <Description project={match.params.project} />;
                 break;
             case 'demo':
+                recordVisit(match.params.project + "/demo");
                 frame = <iframe className="column is-11 is-centered" title={match.params.project} src={this.state.url}></iframe>;
                 break;
             case 'code':
+                recordVisit(match.params.project + "/code");
                 frame = <TreeView data={dirTree[match.params.project]} />;
                 break;
             default:

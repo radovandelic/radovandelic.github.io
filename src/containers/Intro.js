@@ -1,4 +1,5 @@
 import React from 'react';
+import recordVisit from './recordVisit';
 
 var techstack = [
     {
@@ -36,7 +37,7 @@ var techstack = [
 ]
 
 export default function Intro() {
-
+    recordVisit('intro');
     var tech = techstack.map((t, index) => {
         return <li key={index}>
             <a href={t.url} rel="noopener noreferrer nofollow" target="_blank">{t.name}</a>
@@ -48,7 +49,7 @@ export default function Intro() {
             <div className="box column is-9 is-centered" id="intro">
                 <article className="media">
                     <div className="media-left">
-                        <figure className="image is-64x64">
+                        <figure className="image is-96x96">
                             <a href="https://www.linkedin.com/in/radovan-delic/" rel="noopener noreferrer nofollow" target="_blank">
                                 <img src="./static/16472916_10211820442857230_5804988685818547532_n.jpg" alt="placeholder" />
                             </a>
