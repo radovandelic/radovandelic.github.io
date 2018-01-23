@@ -1,8 +1,7 @@
 const recordVisit = (page) => {
     fetch('https://geoip-db.com/json/geoip.php')
-        .then(res => { return res.text(); })
+        .then(res => { return res.json(); })
         .then(res => {
-            res = JSON.parse(res);
             if (res.IPv4 !== '109.134.146.127') {
                 var q = {
                     method: 'POST',
