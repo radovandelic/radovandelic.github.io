@@ -6834,39 +6834,32 @@
                         "active": true
                     },
                     {
-                        "path": "../static/codeserve/battleships/web/php",
-                        "name": "php",
+                        "path": "../static/codeserve/battleships/web/php_old",
+                        "name": "php_old",
                         "children": [
                             {
-                                "path": "../static/codeserve/battleships/web/php/db.php",
-                                "name": "db.php",
-                                "size": 86,
-                                "extension": ".php",
-                                "type": "file"
-                            },
-                            {
-                                "path": "../static/codeserve/battleships/web/php/read.php",
+                                "path": "../static/codeserve/battleships/web/php_old/read.php",
                                 "name": "read.php",
                                 "size": 630,
                                 "extension": ".php",
                                 "type": "file"
                             },
                             {
-                                "path": "../static/codeserve/battleships/web/php/reset.php",
+                                "path": "../static/codeserve/battleships/web/php_old/reset.php",
                                 "name": "reset.php",
                                 "size": 670,
                                 "extension": ".php",
                                 "type": "file"
                             },
                             {
-                                "path": "../static/codeserve/battleships/web/php/write.php",
+                                "path": "../static/codeserve/battleships/web/php_old/write.php",
                                 "name": "write.php",
                                 "size": 772,
                                 "extension": ".php",
                                 "type": "file"
                             }
                         ],
-                        "size": 2158,
+                        "size": 2072,
                         "type": "directory"
                     },
                     {
@@ -6951,12 +6944,12 @@
                         "type": "directory"
                     }
                 ],
-                "size": 26858,
+                "size": 26772,
                 "type": "directory",
                 "toggled": true
             }
         ],
-        "size": 69332,
+        "size": 69246,
         "type": "directory",
         "entry": "../static/codeserve/battleships/web/index.php",
         "toggled": true

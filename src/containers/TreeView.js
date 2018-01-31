@@ -134,7 +134,7 @@ export default class TreeView extends React.Component {
                             </span>
                             <input className="form-control"
                                 onKeyUp={this.onFilterMouseUp.bind(this)}
-                                placeholder="Find..."
+                                placeholder=" Find..."
                                 type="text" />
                         </div>
                     </div>
