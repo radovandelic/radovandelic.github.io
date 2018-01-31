@@ -1,6 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-require('../vendor/autoload.php');
+require '../vendor/autoload.php';
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 $app = new Silex\Application();
@@ -8,36 +9,36 @@ $app['debug'] = true;
 
 $dbopts = parse_url(getenv('DATABASE_URL'));
 $app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
-  array(
-   'pdo.server' => array(
-   'driver'   => 'pgsql',
-   'user' => $dbopts["user"],
-   'password' => $dbopts["pass"],
-   'host' => $dbopts["host"],
-   'port' => $dbopts["port"],
-   'dbname' => ltrim($dbopts["path"],'/')
-  )
- )
+    array(
+        'pdo.server' => array(
+            'driver' => 'pgsql',
+            'user' => $dbopts["user"],
+            'password' => $dbopts["pass"],
+            'host' => $dbopts["host"],
+            'port' => $dbopts["port"],
+            'dbname' => ltrim($dbopts["path"], '/'),
+        ),
+    )
 );
 
 // Register the monolog logging service
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
-  'monolog.logfile' => 'php://stderr',
+    'monolog.logfile' => 'php://stderr',
 ));
 
 // Register view rendering
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
+    'twig.path' => __DIR__ . '/views',
 ));
 
 // Our web handlers
 
-$app->get('/', function() use($app) {
-  $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('index.twig');
+$app->get('/', function () use ($app) {
+    $app['monolog']->addDebug('logging output.');
+    return $app['twig']->render('index.twig');
 });
 
-$app->get('/read/', function() use($app) {
+$app->get('/read/', function () use ($app) {
     $id = intval($_GET['id']);
     $query = "SELECT * from gamedata WHERE id = $id;";
     $st = $app['pdo']->prepare($query);
@@ -49,41 +50,91 @@ $app->get('/read/', function() use($app) {
         $row['gamestate'] = json_decode($row['gamestate']);
         $data = json_encode($row);
     }
-    
+
     $response = new Response();
     $response->setContent($data);
     $response->setStatusCode(Response::HTTP_OK);
-    
+
     // set a HTTP response header
     $response->headers->set('Content-Type', 'text/html');
-    
+
     // print the HTTP headers followed by the content
     $response->send();
 });
 
-$app->get('/write/', function() use($app) {
-    $column = $_GET['column'];
-    $id = intval($_GET['id']);
-    $value = $_GET['value'];
-    if(!is_numeric($value)) { $value = "'$value'"; }
+$app->get('/getall/', function () use ($app) {
 
-    $query = "UPDATE gamedata SET $column = $value WHERE id = $id;";
+    $query = "SELECT id from gamedata WHERE active = 0 ORDER BY id LIMIT 1;";
+
+    $st = $app['pdo']->prepare($query);
+    $st->execute();
+
+    $data = null;
+    while ($row = $st->fetch(PDO::FETCH_ASSOC)) {
+        $app['monolog']->addDebug('Row ' . $row['id']);
+        $data[] = $row['id'];
+    }
+
+    $query = "SELECT * from gamedata WHERE active = 1";
+    $query .= $_GET['id'] ? " AND id !=" . $_GET['id'] : "";
+    $query .= " ORDER BY id;";
+
+    $st = $app['pdo']->prepare($query);
+    $st->execute();
+
+    while ($row = $st->fetch(PDO::FETCH_ASSOC)) {
+        $app['monolog']->addDebug('Row ' . $row['id']);
+        $row['shipdata'] = json_decode($row['shipdata']);
+        $row['gamestate'] = json_decode($row['gamestate']);
+        $data[] = $row;
+    }
+
+    $response = new Response();
+    $response->setContent(json_encode($data));
+    $response->setStatusCode(Response::HTTP_OK);
+
+    // set a HTTP response header
+    $response->headers->set('Content-Type', 'text/html');
+
+    // print the HTTP headers followed by the content
+    $response->send();
+});
+
+$app->post('/write/', function () use ($app) {
+
+    $request = Request::createFromGlobals();
+
+    $content = $request->getContent();
+    $json = json_decode($content);
+    $json->gamestate = json_encode($json->gamestate);
+    $json->shipdata = json_encode($json->shipdata);
+
+    $query = "UPDATE gamedata SET username = '$json->username', ";
+    $query .= "active = $json->active, ";
+    $query .= "turn = $json->turn, ";
+    $query .= "hits = $json->hits, ";
+    $query .= "score = $json->score, ";
+    $query .= "gamestate = '$json->gamestate', ";
+    $query .= "shipdata = '$json->shipdata', ";
+    $query .= "opponent = $json->opponent, ";
+    $query .= "timeout = $json->timeout ";
+    $query .= "WHERE id = $json->id;";
 
     $st = $app['pdo']->prepare($query);
     $st->execute();
 
     $response = new Response();
-    $response->setContent("New record created successfully.");
+    $response->setContent(json_encode("Gamestate updated"));
     $response->setStatusCode(Response::HTTP_OK);
-    
+
     // set a HTTP response header
     $response->headers->set('Content-Type', 'text/html');
-    
+
     // print the HTTP headers followed by the content
     $response->send();
 });
 
-$app->get('/reset/', function() use($app) {
+$app->get('/reset/', function () use ($app) {
     $init = "[
       [null, null, null, null, null, null, null, null, null, null],
       [null, null, null, null, null, null, null, null, null, null],
@@ -96,7 +147,9 @@ $app->get('/reset/', function() use($app) {
       [null, null, null, null, null, null, null, null, null, null],
       [null, null, null, null, null, null, null, null, null, null]
   ]";
-    $query = $sql = "UPDATE gamedata SET active = 0, turn = 0, hits = 0, score = 0, shipdata = '$init', gamestate = '$init', timeout = 0;";
+    $query = "UPDATE gamedata SET active = 0, username = NULL, turn = -1, hits = 0, score = 0,";
+    $query .= " shipdata = '$init', gamestate = '$init', timeout = 0, opponent = -1";
+    $query .= $_GET['id'] ? " WHERE id !=" . $_GET['id'] . ";" : ";";
 
     $st = $app['pdo']->prepare($query);
     $st->execute();
@@ -104,26 +157,12 @@ $app->get('/reset/', function() use($app) {
     $response = new Response();
     $response->setContent("Server succesfully reset.");
     $response->setStatusCode(Response::HTTP_OK);
-    
+
     // set a HTTP response header
     $response->headers->set('Content-Type', 'text/html');
-    
+
     // print the HTTP headers followed by the content
     $response->send();
-});
-
-$app->get('/db/', function() use($app) {
-  $st = $app['pdo']->prepare('SELECT name FROM test_table');
-  $st->execute();
-  $names = array();
-  while ($row = $st->fetch(PDO::FETCH_ASSOC)) {
-    $app['monolog']->addDebug('Row ' . $row['name']);
-    $names[] = $row;
-  }
-
-  return $app['twig']->render('db.twig', array(
-    'names' => $names
-  ));
 });
 
 $app->run();

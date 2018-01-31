@@ -1,0 +1,12 @@
+
+<table>
+{% for v in visits %}
+  <tr>
+    <td> {{ v.location ?: "unknown location" }} </td>
+    <td> {{v.page ?: "?"}} </td>
+    <td> {{v.time ?: "unknown date/time"}} &nbsp;&nbsp; </td>
+    <td> {{v.browser ?: "unknown browser"}} </td>
+    <td> {{v.ip ?: "unknown ip"}} </td>
+  </tr>
+{% endfor %}
+</table>

@@ -1,46 +1,51 @@
-function writeData(column, id, value) {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);//
-            dbwrite = this.responseText;
-        }
-    };
-    xmlhttp.open("GET", "https://battleshipsjs.herokuapp.com/write/?column=" + column + "&id=" + id + "&value=" + value, true);
-    xmlhttp.send();
+const getAll = (callback) => {
+    fetch("https://battleshipsjs.herokuapp.com/getall/", { method: 'GET' })
+        .then(res => res.json())
+        .then(res => callback(res))
+        .catch(err => console.log(err));
 }
 
-function readData(id, who, todo) {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+const writeData = (object) => {
+    var options = {
+        method: 'POST',
+        body: JSON.stringify(object)
+    }
+    fetch(`https://battleshipsjs.herokuapp.com/write/?id=${object.id}`, options)
+        .then(res => res.text())
+        .then(res => {
+            console.log(res);
+        });
 
-            if (who === 'start') {
-                var object = JSON.parse(this.responseText);
-                dbactive = object.active == 0 ? 0 : dbactive;
-            } else if (who === 'opponent') {
-                opponent = JSON.parse(this.responseText);
+}
+
+function readData(who, todo) {
+    var id = who == 'opponent' ? opponent.id : player.id;
+    fetch("https://battleshipsjs.herokuapp.com/read/?id=" + id, { method: 'GET' })
+        .then(res => res.json())
+        .then(res => {
+            if (who === 'opponent') {
+                opponent = res;
             } else {
-
-                player = JSON.parse(this.responseText);
+                player = res;
             }
-            if (todo) todo();
-        }
-    };
-    xmlhttp.open("GET", "https://battleshipsjs.herokuapp.com/read/?id=" + id, true);
-    xmlhttp.send();
 
+            if (todo) todo(res);
+        })
+        .catch(err => console.log(err));
 }
 
-function resetData() {
+function resetData(id) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             console.log(this.responseText);//
-            dbwrite = this.responseText;
         }
     };
-    xmlhttp.open("GET", "reset");
+    if (id) {
+        xmlhttp.open("GET", "https://battleshipsjs.herokuapp.com/reset?id=" + id);
+    } else {
+        xmlhttp.open("GET", "https://battleshipsjs.herokuapp.com/reset");
+    }
     xmlhttp.send();
     return;
 }
