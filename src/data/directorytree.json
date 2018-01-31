@@ -6794,6 +6794,13 @@
                 "type": "file"
             },
             {
+                "path": "../static/codeserve/battleships/gamedata.sql",
+                "name": "gamedata.sql",
+                "size": 251,
+                "extension": ".sql",
+                "type": "file"
+            },
+            {
                 "path": "../static/codeserve/battleships/readme.md",
                 "name": "readme.md",
                 "size": 0,
@@ -6814,14 +6821,14 @@
                     {
                         "path": "../static/codeserve/battleships/web/index.html",
                         "name": "index.html",
-                        "size": 1223,
+                        "size": 1375,
                         "extension": ".html",
                         "type": "file"
                     },
                     {
                         "path": "../static/codeserve/battleships/web/index.php",
                         "name": "index.php",
-                        "size": 4058,
+                        "size": 5508,
                         "extension": ".php",
                         "type": "file",
                         "active": true
@@ -6830,6 +6837,13 @@
                         "path": "../static/codeserve/battleships/web/php",
                         "name": "php",
                         "children": [
+                            {
+                                "path": "../static/codeserve/battleships/web/php/db.php",
+                                "name": "db.php",
+                                "size": 86,
+                                "extension": ".php",
+                                "type": "file"
+                            },
                             {
                                 "path": "../static/codeserve/battleships/web/php/read.php",
                                 "name": "read.php",
@@ -6852,7 +6866,7 @@
                                 "type": "file"
                             }
                         ],
-                        "size": 2072,
+                        "size": 2158,
                         "type": "directory"
                     },
                     {
@@ -6866,12 +6880,12 @@
                                     {
                                         "path": "../static/codeserve/battleships/web/static/css/style.css",
                                         "name": "style.css",
-                                        "size": 689,
+                                        "size": 585,
                                         "extension": ".css",
                                         "type": "file"
                                     }
                                 ],
-                                "size": 689,
+                                "size": 585,
                                 "type": "directory"
                             },
                             {
@@ -6881,36 +6895,29 @@
                                     {
                                         "path": "../static/codeserve/battleships/web/static/js/ajax.js",
                                         "name": "ajax.js",
-                                        "size": 1469,
+                                        "size": 1431,
                                         "extension": ".js",
                                         "type": "file"
                                     },
                                     {
                                         "path": "../static/codeserve/battleships/web/static/js/app.js",
                                         "name": "app.js",
-                                        "size": 10528,
+                                        "size": 13820,
                                         "extension": ".js",
                                         "type": "file"
                                     }
                                 ],
-                                "size": 11997,
+                                "size": 15251,
                                 "type": "directory"
                             }
                         ],
-                        "size": 12686,
+                        "size": 15836,
                         "type": "directory"
                     },
                     {
                         "path": "../static/codeserve/battleships/web/views",
                         "name": "views",
                         "children": [
-                            {
-                                "path": "../static/codeserve/battleships/web/views/db.twig",
-                                "name": "db.twig",
-                                "size": 145,
-                                "extension": ".twig",
-                                "type": "file"
-                            },
                             {
                                 "path": "../static/codeserve/battleships/web/views/header.html",
                                 "name": "header.html",
@@ -6921,7 +6928,7 @@
                             {
                                 "path": "../static/codeserve/battleships/web/views/index.twig",
                                 "name": "index.twig",
-                                "size": 1264,
+                                "size": 1375,
                                 "extension": ".twig",
                                 "type": "file"
                             },
@@ -6931,18 +6938,25 @@
                                 "size": 128,
                                 "extension": ".html",
                                 "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/battleships/web/views/visits.twig",
+                                "name": "visits.twig",
+                                "size": 306,
+                                "extension": ".twig",
+                                "type": "file"
                             }
                         ],
-                        "size": 1625,
+                        "size": 1897,
                         "type": "directory"
                     }
                 ],
-                "size": 21748,
+                "size": 26858,
                 "type": "directory",
                 "toggled": true
             }
         ],
-        "size": 63971,
+        "size": 69332,
         "type": "directory",
         "entry": "../static/codeserve/battleships/web/index.php",
         "toggled": true

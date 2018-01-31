@@ -41,9 +41,9 @@ starbook.children[0].active = true;
 cleancalc.entry = '../static/codeserve/cleancalc/index.html';
 cleancalc.children[2].active = true;
 
-battleships.children[4].toggled = true;
+battleships.children[5].toggled = true;
 battleships.entry = '../static/codeserve/battleships/web/index.php';
-battleships.children[4].children[2].active = true;
+battleships.children[5].children[2].active = true;
 
 const tree = {
     philarios, holmichapp, rankerjs, merchantjs, starbook, cleancalc, battleships
