@@ -65,9 +65,9 @@ export default function Intro() {
                                 <br />
                                 I am a Full Stack Developer currently based in Brussels, Belgium.
                             I am relatively new to web development but so far I have built
-                            many small to medium sized projects in multiple languages and frameworks
-                            and I am open to learning many more.
-                            Also, in 2017 I competed in the&nbsp;
+                            many small to medium sized projects in multiple languages and frameworks.
+                            <br />
+                                Also, in 2017 I competed in the&nbsp;
                             <strong><a href="https://www.hackerrank.com/results/projecteuler/r_delic"
                                     rel="noopener noreferrer nofollow" target="_blank">Project Euler</a></strong>&nbsp;
                             challenge on <a href="https://www.hackerrank.com" rel="noopener noreferrer nofollow" target="_blank">HackerRank</a> and scored in the top 2% out of ~70k participants

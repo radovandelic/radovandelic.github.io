@@ -2610,1599 +2610,21 @@
                     {
                         "path": "../static/codeserve/philarios/data",
                         "name": "data",
-                        "children": [
-                            {
-                                "path": "../static/codeserve/philarios/data/flickr",
-                                "name": "flickr",
-                                "children": [
-                                    {
-                                        "path": "../static/codeserve/philarios/data/flickr/flickr.reflection.getMethods.json",
-                                        "name": "flickr.reflection.getMethods.json",
-                                        "size": 15205,
-                                        "extension": ".json",
-                                        "type": "file"
-                                    },
-                                    {
-                                        "path": "../static/codeserve/philarios/data/flickr/methods",
-                                        "name": "methods",
-                                        "children": [
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.activity.userComments.json",
-                                                "name": "flickr.activity.userComments.json",
-                                                "size": 4051,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.activity.userPhotos.json",
-                                                "name": "flickr.activity.userPhotos.json",
-                                                "size": 4432,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.auth.checkToken.json",
-                                                "name": "flickr.auth.checkToken.json",
-                                                "size": 2666,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.auth.getFrob.json",
-                                                "name": "flickr.auth.getFrob.json",
-                                                "size": 2267,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.auth.getFullToken.json",
-                                                "name": "flickr.auth.getFullToken.json",
-                                                "size": 2701,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.auth.getToken.json",
-                                                "name": "flickr.auth.getToken.json",
-                                                "size": 2932,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.auth.oauth.checkToken.json",
-                                                "name": "flickr.auth.oauth.checkToken.json",
-                                                "size": 2444,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.auth.oauth.getAccessToken.json",
-                                                "name": "flickr.auth.oauth.getAccessToken.json",
-                                                "size": 2353,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.blogs.getList.json",
-                                                "name": "flickr.blogs.getList.json",
-                                                "size": 3465,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.blogs.getServices.json",
-                                                "name": "flickr.blogs.getServices.json",
-                                                "size": 2366,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.blogs.postPhoto.json",
-                                                "name": "flickr.blogs.postPhoto.json",
-                                                "size": 4123,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.cameras.getBrandModels.json",
-                                                "name": "flickr.cameras.getBrandModels.json",
-                                                "size": 2682,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.cameras.getBrands.json",
-                                                "name": "flickr.cameras.getBrands.json",
-                                                "size": 1998,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.collections.getInfo.json",
-                                                "name": "flickr.collections.getInfo.json",
-                                                "size": 3949,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.collections.getTree.json",
-                                                "name": "flickr.collections.getTree.json",
-                                                "size": 3073,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.commons.getInstitutions.json",
-                                                "name": "flickr.commons.getInstitutions.json",
-                                                "size": 2224,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.contacts.getList.json",
-                                                "name": "flickr.contacts.getList.json",
-                                                "size": 4523,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.contacts.getListRecentlyUploaded.json",
-                                                "name": "flickr.contacts.getListRecentlyUploaded.json",
-                                                "size": 3529,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.contacts.getPublicList.json",
-                                                "name": "flickr.contacts.getPublicList.json",
-                                                "size": 3004,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.contacts.getTaggingSuggestions.json",
-                                                "name": "flickr.contacts.getTaggingSuggestions.json",
-                                                "size": 3344,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.favorites.add.json",
-                                                "name": "flickr.favorites.add.json",
-                                                "size": 3438,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.favorites.getContext.json",
-                                                "name": "flickr.favorites.getContext.json",
-                                                "size": 3030,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.favorites.getList.json",
-                                                "name": "flickr.favorites.getList.json",
-                                                "size": 3739,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.favorites.getPublicList.json",
-                                                "name": "flickr.favorites.getPublicList.json",
-                                                "size": 3595,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.favorites.remove.json",
-                                                "name": "flickr.favorites.remove.json",
-                                                "size": 3287,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.addPhoto.json",
-                                                "name": "flickr.galleries.addPhoto.json",
-                                                "size": 4176,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.create.json",
-                                                "name": "flickr.galleries.create.json",
-                                                "size": 3923,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.editMeta.json",
-                                                "name": "flickr.galleries.editMeta.json",
-                                                "size": 3346,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.editPhoto.json",
-                                                "name": "flickr.galleries.editPhoto.json",
-                                                "size": 3273,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.editPhotos.json",
-                                                "name": "flickr.galleries.editPhotos.json",
-                                                "size": 3379,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.getInfo.json",
-                                                "name": "flickr.galleries.getInfo.json",
-                                                "size": 2377,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.getList.json",
-                                                "name": "flickr.galleries.getList.json",
-                                                "size": 3986,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.getListForPhoto.json",
-                                                "name": "flickr.galleries.getListForPhoto.json",
-                                                "size": 3652,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.getPhotos.json",
-                                                "name": "flickr.galleries.getPhotos.json",
-                                                "size": 4003,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.galleries.removePhoto.json",
-                                                "name": "flickr.galleries.removePhoto.json",
-                                                "size": 3084,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.browse.json",
-                                                "name": "flickr.groups.browse.json",
-                                                "size": 4081,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.discuss.replies.add.json",
-                                                "name": "flickr.groups.discuss.replies.add.json",
-                                                "size": 3671,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.discuss.replies.delete.json",
-                                                "name": "flickr.groups.discuss.replies.delete.json",
-                                                "size": 3577,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.discuss.replies.edit.json",
-                                                "name": "flickr.groups.discuss.replies.edit.json",
-                                                "size": 4029,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.discuss.replies.getInfo.json",
-                                                "name": "flickr.groups.discuss.replies.getInfo.json",
-                                                "size": 2964,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.discuss.replies.getList.json",
-                                                "name": "flickr.groups.discuss.replies.getList.json",
-                                                "size": 7034,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.discuss.topics.add.json",
-                                                "name": "flickr.groups.discuss.topics.add.json",
-                                                "size": 3619,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.discuss.topics.getInfo.json",
-                                                "name": "flickr.groups.discuss.topics.getInfo.json",
-                                                "size": 2871,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.discuss.topics.getList.json",
-                                                "name": "flickr.groups.discuss.topics.getList.json",
-                                                "size": 7373,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.getInfo.json",
-                                                "name": "flickr.groups.getInfo.json",
-                                                "size": 3272,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.join.json",
-                                                "name": "flickr.groups.join.json",
-                                                "size": 4481,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.joinRequest.json",
-                                                "name": "flickr.groups.joinRequest.json",
-                                                "size": 4502,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.leave.json",
-                                                "name": "flickr.groups.leave.json",
-                                                "size": 3542,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.members.getList.json",
-                                                "name": "flickr.groups.members.getList.json",
-                                                "size": 4364,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.pools.add.json",
-                                                "name": "flickr.groups.pools.add.json",
-                                                "size": 4735,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.pools.getContext.json",
-                                                "name": "flickr.groups.pools.getContext.json",
-                                                "size": 3078,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.pools.getGroups.json",
-                                                "name": "flickr.groups.pools.getGroups.json",
-                                                "size": 3705,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.pools.getPhotos.json",
-                                                "name": "flickr.groups.pools.getPhotos.json",
-                                                "size": 4468,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.pools.remove.json",
-                                                "name": "flickr.groups.pools.remove.json",
-                                                "size": 3604,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.groups.search.json",
-                                                "name": "flickr.groups.search.json",
-                                                "size": 3028,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.interestingness.getList.json",
-                                                "name": "flickr.interestingness.getList.json",
-                                                "size": 3307,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.machinetags.getNamespaces.json",
-                                                "name": "flickr.machinetags.getNamespaces.json",
-                                                "size": 3171,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.machinetags.getPairs.json",
-                                                "name": "flickr.machinetags.getPairs.json",
-                                                "size": 3303,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.machinetags.getPredicates.json",
-                                                "name": "flickr.machinetags.getPredicates.json",
-                                                "size": 2827,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.machinetags.getRecentValues.json",
-                                                "name": "flickr.machinetags.getRecentValues.json",
-                                                "size": 2626,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.machinetags.getValues.json",
-                                                "name": "flickr.machinetags.getValues.json",
-                                                "size": 3025,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.panda.getList.json",
-                                                "name": "flickr.panda.getList.json",
-                                                "size": 2296,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.panda.getPhotos.json",
-                                                "name": "flickr.panda.getPhotos.json",
-                                                "size": 5080,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.findByEmail.json",
-                                                "name": "flickr.people.findByEmail.json",
-                                                "size": 2210,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.findByUsername.json",
-                                                "name": "flickr.people.findByUsername.json",
-                                                "size": 2168,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.getGroups.json",
-                                                "name": "flickr.people.getGroups.json",
-                                                "size": 4345,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.getInfo.json",
-                                                "name": "flickr.people.getInfo.json",
-                                                "size": 3715,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.getLimits.json",
-                                                "name": "flickr.people.getLimits.json",
-                                                "size": 3449,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.getPhotos.json",
-                                                "name": "flickr.people.getPhotos.json",
-                                                "size": 5872,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.getPhotosOf.json",
-                                                "name": "flickr.people.getPhotosOf.json",
-                                                "size": 4698,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.getPublicGroups.json",
-                                                "name": "flickr.people.getPublicGroups.json",
-                                                "size": 3094,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.getPublicPhotos.json",
-                                                "name": "flickr.people.getPublicPhotos.json",
-                                                "size": 3461,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.people.getUploadStatus.json",
-                                                "name": "flickr.people.getUploadStatus.json",
-                                                "size": 3713,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.addTags.json",
-                                                "name": "flickr.photos.addTags.json",
-                                                "size": 3546,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.comments.addComment.json",
-                                                "name": "flickr.photos.comments.addComment.json",
-                                                "size": 3526,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.comments.deleteComment.json",
-                                                "name": "flickr.photos.comments.deleteComment.json",
-                                                "size": 3100,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.comments.editComment.json",
-                                                "name": "flickr.photos.comments.editComment.json",
-                                                "size": 3364,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.comments.getList.json",
-                                                "name": "flickr.photos.comments.getList.json",
-                                                "size": 2883,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.comments.getRecentForContacts.json",
-                                                "name": "flickr.photos.comments.getRecentForContacts.json",
-                                                "size": 4302,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.delete.json",
-                                                "name": "flickr.photos.delete.json",
-                                                "size": 2910,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.batchCorrectLocation.json",
-                                                "name": "flickr.photos.geo.batchCorrectLocation.json",
-                                                "size": 4919,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.correctLocation.json",
-                                                "name": "flickr.photos.geo.correctLocation.json",
-                                                "size": 4205,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.getLocation.json",
-                                                "name": "flickr.photos.geo.getLocation.json",
-                                                "size": 2609,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.getPerms.json",
-                                                "name": "flickr.photos.geo.getPerms.json",
-                                                "size": 3297,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.photosForLocation.json",
-                                                "name": "flickr.photos.geo.photosForLocation.json",
-                                                "size": 5079,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.removeLocation.json",
-                                                "name": "flickr.photos.geo.removeLocation.json",
-                                                "size": 3172,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.setContext.json",
-                                                "name": "flickr.photos.geo.setContext.json",
-                                                "size": 3751,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.setLocation.json",
-                                                "name": "flickr.photos.geo.setLocation.json",
-                                                "size": 5703,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.geo.setPerms.json",
-                                                "name": "flickr.photos.geo.setPerms.json",
-                                                "size": 4106,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getAllContexts.json",
-                                                "name": "flickr.photos.getAllContexts.json",
-                                                "size": 2215,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getContactsPhotos.json",
-                                                "name": "flickr.photos.getContactsPhotos.json",
-                                                "size": 4280,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getContactsPublicPhotos.json",
-                                                "name": "flickr.photos.getContactsPublicPhotos.json",
-                                                "size": 3589,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getContext.json",
-                                                "name": "flickr.photos.getContext.json",
-                                                "size": 2578,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getCounts.json",
-                                                "name": "flickr.photos.getCounts.json",
-                                                "size": 3885,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getExif.json",
-                                                "name": "flickr.photos.getExif.json",
-                                                "size": 3269,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getFavorites.json",
-                                                "name": "flickr.photos.getFavorites.json",
-                                                "size": 3516,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getInfo.json",
-                                                "name": "flickr.photos.getInfo.json",
-                                                "size": 4154,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getNotInSet.json",
-                                                "name": "flickr.photos.getNotInSet.json",
-                                                "size": 5454,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getPerms.json",
-                                                "name": "flickr.photos.getPerms.json",
-                                                "size": 3092,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getPopular.json",
-                                                "name": "flickr.photos.getPopular.json",
-                                                "size": 3564,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getRecent.json",
-                                                "name": "flickr.photos.getRecent.json",
-                                                "size": 3051,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getSizes.json",
-                                                "name": "flickr.photos.getSizes.json",
-                                                "size": 4541,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getUntagged.json",
-                                                "name": "flickr.photos.getUntagged.json",
-                                                "size": 5440,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getWithGeoData.json",
-                                                "name": "flickr.photos.getWithGeoData.json",
-                                                "size": 5676,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.getWithoutGeoData.json",
-                                                "name": "flickr.photos.getWithoutGeoData.json",
-                                                "size": 5747,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.licenses.getInfo.json",
-                                                "name": "flickr.photos.licenses.getInfo.json",
-                                                "size": 3113,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.licenses.setLicense.json",
-                                                "name": "flickr.photos.licenses.setLicense.json",
-                                                "size": 3329,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.notes.add.json",
-                                                "name": "flickr.photos.notes.add.json",
-                                                "size": 4158,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.notes.delete.json",
-                                                "name": "flickr.photos.notes.delete.json",
-                                                "size": 3062,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.notes.edit.json",
-                                                "name": "flickr.photos.notes.edit.json",
-                                                "size": 3907,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.people.add.json",
-                                                "name": "flickr.photos.people.add.json",
-                                                "size": 5107,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.people.delete.json",
-                                                "name": "flickr.photos.people.delete.json",
-                                                "size": 3382,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.people.deleteCoords.json",
-                                                "name": "flickr.photos.people.deleteCoords.json",
-                                                "size": 3452,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.people.editCoords.json",
-                                                "name": "flickr.photos.people.editCoords.json",
-                                                "size": 4412,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.people.getList.json",
-                                                "name": "flickr.photos.people.getList.json",
-                                                "size": 2577,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.recentlyUpdated.json",
-                                                "name": "flickr.photos.recentlyUpdated.json",
-                                                "size": 5296,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.removeTag.json",
-                                                "name": "flickr.photos.removeTag.json",
-                                                "size": 3108,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.search.json",
-                                                "name": "flickr.photos.search.json",
-                                                "size": 19201,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.setContentType.json",
-                                                "name": "flickr.photos.setContentType.json",
-                                                "size": 3581,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.setDates.json",
-                                                "name": "flickr.photos.setDates.json",
-                                                "size": 4390,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.setMeta.json",
-                                                "name": "flickr.photos.setMeta.json",
-                                                "size": 3566,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.setPerms.json",
-                                                "name": "flickr.photos.setPerms.json",
-                                                "size": 4276,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.setSafetyLevel.json",
-                                                "name": "flickr.photos.setSafetyLevel.json",
-                                                "size": 3803,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.setTags.json",
-                                                "name": "flickr.photos.setTags.json",
-                                                "size": 3344,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.suggestions.approveSuggestion.json",
-                                                "name": "flickr.photos.suggestions.approveSuggestion.json",
-                                                "size": 2799,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.suggestions.getList.json",
-                                                "name": "flickr.photos.suggestions.getList.json",
-                                                "size": 3110,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.suggestions.rejectSuggestion.json",
-                                                "name": "flickr.photos.suggestions.rejectSuggestion.json",
-                                                "size": 2786,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.suggestions.removeSuggestion.json",
-                                                "name": "flickr.photos.suggestions.removeSuggestion.json",
-                                                "size": 2825,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.suggestions.suggestLocation.json",
-                                                "name": "flickr.photos.suggestions.suggestLocation.json",
-                                                "size": 3929,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.transform.rotate.json",
-                                                "name": "flickr.photos.transform.rotate.json",
-                                                "size": 3700,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photos.upload.checkTickets.json",
-                                                "name": "flickr.photos.upload.checkTickets.json",
-                                                "size": 2844,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.addPhoto.json",
-                                                "name": "flickr.photosets.addPhoto.json",
-                                                "size": 3607,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.comments.addComment.json",
-                                                "name": "flickr.photosets.comments.addComment.json",
-                                                "size": 3419,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.comments.deleteComment.json",
-                                                "name": "flickr.photosets.comments.deleteComment.json",
-                                                "size": 2966,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.comments.editComment.json",
-                                                "name": "flickr.photosets.comments.editComment.json",
-                                                "size": 3203,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.comments.getList.json",
-                                                "name": "flickr.photosets.comments.getList.json",
-                                                "size": 2460,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.create.json",
-                                                "name": "flickr.photosets.create.json",
-                                                "size": 4027,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.delete.json",
-                                                "name": "flickr.photosets.delete.json",
-                                                "size": 2971,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.editMeta.json",
-                                                "name": "flickr.photosets.editMeta.json",
-                                                "size": 3374,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.editPhotos.json",
-                                                "name": "flickr.photosets.editPhotos.json",
-                                                "size": 4377,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.getContext.json",
-                                                "name": "flickr.photosets.getContext.json",
-                                                "size": 2847,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.getInfo.json",
-                                                "name": "flickr.photosets.getInfo.json",
-                                                "size": 2825,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.getList.json",
-                                                "name": "flickr.photosets.getList.json",
-                                                "size": 4398,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.getPhotos.json",
-                                                "name": "flickr.photosets.getPhotos.json",
-                                                "size": 4351,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.orderSets.json",
-                                                "name": "flickr.photosets.orderSets.json",
-                                                "size": 3132,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.removePhoto.json",
-                                                "name": "flickr.photosets.removePhoto.json",
-                                                "size": 3417,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.removePhotos.json",
-                                                "name": "flickr.photosets.removePhotos.json",
-                                                "size": 3307,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.reorderPhotos.json",
-                                                "name": "flickr.photosets.reorderPhotos.json",
-                                                "size": 3368,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.photosets.setPrimaryPhoto.json",
-                                                "name": "flickr.photosets.setPrimaryPhoto.json",
-                                                "size": 3266,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.find.json",
-                                                "name": "flickr.places.find.json",
-                                                "size": 3460,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.findByLatLon.json",
-                                                "name": "flickr.places.findByLatLon.json",
-                                                "size": 4069,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.getChildrenWithPhotosPublic.json",
-                                                "name": "flickr.places.getChildrenWithPhotosPublic.json",
-                                                "size": 3454,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.getInfo.json",
-                                                "name": "flickr.places.getInfo.json",
-                                                "size": 4214,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.getInfoByUrl.json",
-                                                "name": "flickr.places.getInfoByUrl.json",
-                                                "size": 3499,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.getPlaceTypes.json",
-                                                "name": "flickr.places.getPlaceTypes.json",
-                                                "size": 2212,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.getShapeHistory.json",
-                                                "name": "flickr.places.getShapeHistory.json",
-                                                "size": 3467,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.getTopPlacesList.json",
-                                                "name": "flickr.places.getTopPlacesList.json",
-                                                "size": 3810,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.placesForBoundingBox.json",
-                                                "name": "flickr.places.placesForBoundingBox.json",
-                                                "size": 5807,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.placesForContacts.json",
-                                                "name": "flickr.places.placesForContacts.json",
-                                                "size": 8060,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.placesForTags.json",
-                                                "name": "flickr.places.placesForTags.json",
-                                                "size": 7232,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.placesForUser.json",
-                                                "name": "flickr.places.placesForUser.json",
-                                                "size": 7671,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.resolvePlaceId.json",
-                                                "name": "flickr.places.resolvePlaceId.json",
-                                                "size": 3373,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.resolvePlaceURL.json",
-                                                "name": "flickr.places.resolvePlaceURL.json",
-                                                "size": 3457,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.places.tagsForPlace.json",
-                                                "name": "flickr.places.tagsForPlace.json",
-                                                "size": 4450,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.prefs.getContentType.json",
-                                                "name": "flickr.prefs.getContentType.json",
-                                                "size": 2783,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.prefs.getGeoPerms.json",
-                                                "name": "flickr.prefs.getGeoPerms.json",
-                                                "size": 3787,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.prefs.getHidden.json",
-                                                "name": "flickr.prefs.getHidden.json",
-                                                "size": 2766,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.prefs.getPrivacy.json",
-                                                "name": "flickr.prefs.getPrivacy.json",
-                                                "size": 2941,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.prefs.getSafetyLevel.json",
-                                                "name": "flickr.prefs.getSafetyLevel.json",
-                                                "size": 2783,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.profile.getProfile.json",
-                                                "name": "flickr.profile.getProfile.json",
-                                                "size": 2496,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.push.getSubscriptions.json",
-                                                "name": "flickr.push.getSubscriptions.json",
-                                                "size": 3471,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.push.getTopics.json",
-                                                "name": "flickr.push.getTopics.json",
-                                                "size": 2005,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.push.subscribe.json",
-                                                "name": "flickr.push.subscribe.json",
-                                                "size": 9515,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.push.unsubscribe.json",
-                                                "name": "flickr.push.unsubscribe.json",
-                                                "size": 4835,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.reflection.getMethodInfo.json",
-                                                "name": "flickr.reflection.getMethodInfo.json",
-                                                "size": 2744,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.reflection.getMethods.json",
-                                                "name": "flickr.reflection.getMethods.json",
-                                                "size": 2027,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getCSVFiles.json",
-                                                "name": "flickr.stats.getCSVFiles.json",
-                                                "size": 3485,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getCollectionDomains.json",
-                                                "name": "flickr.stats.getCollectionDomains.json",
-                                                "size": 4950,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getCollectionReferrers.json",
-                                                "name": "flickr.stats.getCollectionReferrers.json",
-                                                "size": 5335,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getCollectionStats.json",
-                                                "name": "flickr.stats.getCollectionStats.json",
-                                                "size": 3922,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotoDomains.json",
-                                                "name": "flickr.stats.getPhotoDomains.json",
-                                                "size": 4900,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotoReferrers.json",
-                                                "name": "flickr.stats.getPhotoReferrers.json",
-                                                "size": 5292,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotoStats.json",
-                                                "name": "flickr.stats.getPhotoStats.json",
-                                                "size": 3941,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotosetDomains.json",
-                                                "name": "flickr.stats.getPhotosetDomains.json",
-                                                "size": 4920,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotosetReferrers.json",
-                                                "name": "flickr.stats.getPhotosetReferrers.json",
-                                                "size": 5307,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotosetStats.json",
-                                                "name": "flickr.stats.getPhotosetStats.json",
-                                                "size": 3918,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotostreamDomains.json",
-                                                "name": "flickr.stats.getPhotostreamDomains.json",
-                                                "size": 4557,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotostreamReferrers.json",
-                                                "name": "flickr.stats.getPhotostreamReferrers.json",
-                                                "size": 4946,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPhotostreamStats.json",
-                                                "name": "flickr.stats.getPhotostreamStats.json",
-                                                "size": 3596,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getPopularPhotos.json",
-                                                "name": "flickr.stats.getPopularPhotos.json",
-                                                "size": 5397,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.stats.getTotalViews.json",
-                                                "name": "flickr.stats.getTotalViews.json",
-                                                "size": 3771,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getClusterPhotos.json",
-                                                "name": "flickr.tags.getClusterPhotos.json",
-                                                "size": 2082,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getClusters.json",
-                                                "name": "flickr.tags.getClusters.json",
-                                                "size": 2377,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getHotList.json",
-                                                "name": "flickr.tags.getHotList.json",
-                                                "size": 2615,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getListPhoto.json",
-                                                "name": "flickr.tags.getListPhoto.json",
-                                                "size": 2528,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getListUser.json",
-                                                "name": "flickr.tags.getListUser.json",
-                                                "size": 2423,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getListUserPopular.json",
-                                                "name": "flickr.tags.getListUserPopular.json",
-                                                "size": 2669,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getListUserRaw.json",
-                                                "name": "flickr.tags.getListUserRaw.json",
-                                                "size": 2324,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getMostFrequentlyUsed.json",
-                                                "name": "flickr.tags.getMostFrequentlyUsed.json",
-                                                "size": 2861,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.tags.getRelated.json",
-                                                "name": "flickr.tags.getRelated.json",
-                                                "size": 2243,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.test.echo.json",
-                                                "name": "flickr.test.echo.json",
-                                                "size": 1872,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.test.login.json",
-                                                "name": "flickr.test.login.json",
-                                                "size": 2790,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.test.null.json",
-                                                "name": "flickr.test.null.json",
-                                                "size": 2597,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.addTestimonial.json",
-                                                "name": "flickr.testimonials.addTestimonial.json",
-                                                "size": 3873,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.approveTestimonial.json",
-                                                "name": "flickr.testimonials.approveTestimonial.json",
-                                                "size": 3253,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.deleteTestimonial.json",
-                                                "name": "flickr.testimonials.deleteTestimonial.json",
-                                                "size": 3139,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.editTestimonial.json",
-                                                "name": "flickr.testimonials.editTestimonial.json",
-                                                "size": 4202,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getAllTestimonialsAbout.json",
-                                                "name": "flickr.testimonials.getAllTestimonialsAbout.json",
-                                                "size": 3183,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getAllTestimonialsAboutBy.json",
-                                                "name": "flickr.testimonials.getAllTestimonialsAboutBy.json",
-                                                "size": 3146,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getAllTestimonialsBy.json",
-                                                "name": "flickr.testimonials.getAllTestimonialsBy.json",
-                                                "size": 3177,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getPendingTestimonialsAbout.json",
-                                                "name": "flickr.testimonials.getPendingTestimonialsAbout.json",
-                                                "size": 3172,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getPendingTestimonialsAboutBy.json",
-                                                "name": "flickr.testimonials.getPendingTestimonialsAboutBy.json",
-                                                "size": 3101,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getPendingTestimonialsBy.json",
-                                                "name": "flickr.testimonials.getPendingTestimonialsBy.json",
-                                                "size": 3166,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getTestimonialsAbout.json",
-                                                "name": "flickr.testimonials.getTestimonialsAbout.json",
-                                                "size": 2421,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getTestimonialsAboutBy.json",
-                                                "name": "flickr.testimonials.getTestimonialsAboutBy.json",
-                                                "size": 3099,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.testimonials.getTestimonialsBy.json",
-                                                "name": "flickr.testimonials.getTestimonialsBy.json",
-                                                "size": 2428,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.urls.getGroup.json",
-                                                "name": "flickr.urls.getGroup.json",
-                                                "size": 2162,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.urls.getUserPhotos.json",
-                                                "name": "flickr.urls.getUserPhotos.json",
-                                                "size": 2364,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.urls.getUserProfile.json",
-                                                "name": "flickr.urls.getUserProfile.json",
-                                                "size": 2366,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.urls.lookupGallery.json",
-                                                "name": "flickr.urls.lookupGallery.json",
-                                                "size": 2487,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.urls.lookupGroup.json",
-                                                "name": "flickr.urls.lookupGroup.json",
-                                                "size": 2214,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            },
-                                            {
-                                                "path": "../static/codeserve/philarios/data/flickr/methods/flickr.urls.lookupUser.json",
-                                                "name": "flickr.urls.lookupUser.json",
-                                                "size": 2200,
-                                                "extension": ".json",
-                                                "type": "file"
-                                            }
-                                        ],
-                                        "size": 816826,
-                                        "type": "directory"
-                                    }
-                                ],
-                                "size": 832031,
-                                "type": "directory"
-                            }
-                        ],
-                        "size": 832031,
+                        "children": [],
+                        "size": 0,
                         "type": "directory"
                     },
                     {
                         "path": "../static/codeserve/philarios/package-lock.json",
                         "name": "package-lock.json",
-                        "size": 162828,
+                        "size": 167000,
                         "extension": ".json",
                         "type": "file"
                     },
                     {
                         "path": "../static/codeserve/philarios/package.json",
                         "name": "package.json",
-                        "size": 1550,
+                        "size": 1628,
                         "extension": ".json",
                         "type": "file"
                     },
@@ -5136,21 +3558,14 @@
                                 "name": "api",
                                 "children": [
                                     {
-                                        "path": "../static/codeserve/philarios/src/api/facets.js",
-                                        "name": "facets.js",
-                                        "size": 1143,
-                                        "extension": ".js",
-                                        "type": "file"
-                                    },
-                                    {
                                         "path": "../static/codeserve/philarios/src/api/index.js",
                                         "name": "index.js",
-                                        "size": 2982,
+                                        "size": 3223,
                                         "extension": ".js",
                                         "type": "file"
                                     }
                                 ],
-                                "size": 4125,
+                                "size": 3223,
                                 "type": "directory"
                             },
                             {
@@ -5204,7 +3619,7 @@
                                     {
                                         "path": "../static/codeserve/philarios/src/externals/flickr.js",
                                         "name": "flickr.js",
-                                        "size": 483,
+                                        "size": 452,
                                         "extension": ".js",
                                         "type": "file"
                                     },
@@ -5223,7 +3638,7 @@
                                         "type": "file"
                                     }
                                 ],
-                                "size": 730,
+                                "size": 699,
                                 "type": "directory"
                             },
                             {
@@ -5279,11 +3694,26 @@
                                 "type": "directory"
                             }
                         ],
-                        "size": 7101,
+                        "size": 6168,
+                        "type": "directory"
+                    },
+                    {
+                        "path": "../static/codeserve/philarios/test",
+                        "name": "test",
+                        "children": [
+                            {
+                                "path": "../static/codeserve/philarios/test/index.js",
+                                "name": "index.js",
+                                "size": 2017,
+                                "extension": ".js",
+                                "type": "file"
+                            }
+                        ],
+                        "size": 2017,
                         "type": "directory"
                     }
                 ],
-                "size": 34021401,
+                "size": 33194704,
                 "type": "directory"
             }
         ],
@@ -5428,7 +3858,7 @@
             {
                 "path": "../static/codeserve/holmichapp/package.json",
                 "name": "package.json",
-                "size": 1493,
+                "size": 1624,
                 "extension": ".json",
                 "type": "file"
             },
@@ -5574,7 +4004,7 @@
                             {
                                 "path": "../static/codeserve/holmichapp/server/users/routes.js",
                                 "name": "routes.js",
-                                "size": 2606,
+                                "size": 2676,
                                 "extension": ".js",
                                 "type": "file"
                             },
@@ -5586,11 +4016,11 @@
                                 "type": "file"
                             }
                         ],
-                        "size": 3904,
+                        "size": 3974,
                         "type": "directory"
                     }
                 ],
-                "size": 11630,
+                "size": 11700,
                 "type": "directory"
             },
             {
@@ -5600,7 +4030,7 @@
                     {
                         "path": "../static/codeserve/holmichapp/src/App.js",
                         "name": "App.js",
-                        "size": 1743,
+                        "size": 1754,
                         "extension": ".js",
                         "type": "file"
                     },
@@ -5618,14 +4048,14 @@
                             {
                                 "path": "../static/codeserve/holmichapp/src/components/Header.js",
                                 "name": "Header.js",
-                                "size": 1821,
+                                "size": 1859,
                                 "extension": ".js",
                                 "type": "file"
                             },
                             {
                                 "path": "../static/codeserve/holmichapp/src/components/Home.js",
                                 "name": "Home.js",
-                                "size": 387,
+                                "size": 508,
                                 "extension": ".js",
                                 "type": "file"
                             },
@@ -5672,7 +4102,7 @@
                                 "type": "file"
                             }
                         ],
-                        "size": 15027,
+                        "size": 15186,
                         "type": "directory"
                     },
                     {
@@ -5710,7 +4140,7 @@
                             {
                                 "path": "../static/codeserve/holmichapp/src/containers/Login.js",
                                 "name": "Login.js",
-                                "size": 3429,
+                                "size": 3404,
                                 "extension": ".js",
                                 "type": "file"
                             },
@@ -5759,7 +4189,7 @@
                             {
                                 "path": "../static/codeserve/holmichapp/src/containers/Profile.js",
                                 "name": "Profile.js",
-                                "size": 1312,
+                                "size": 1621,
                                 "extension": ".js",
                                 "type": "file"
                             },
@@ -5773,7 +4203,7 @@
                             {
                                 "path": "../static/codeserve/holmichapp/src/containers/Register.js",
                                 "name": "Register.js",
-                                "size": 3346,
+                                "size": 3877,
                                 "extension": ".js",
                                 "type": "file"
                             },
@@ -5785,7 +4215,7 @@
                                 "type": "file"
                             }
                         ],
-                        "size": 34424,
+                        "size": 35239,
                         "type": "directory"
                     },
                     {
@@ -5943,12 +4373,27 @@
                         "type": "file"
                     }
                 ],
-                "size": 108383,
+                "size": 109368,
                 "type": "directory",
                 "toggled": true
+            },
+            {
+                "path": "../static/codeserve/holmichapp/test",
+                "name": "test",
+                "children": [
+                    {
+                        "path": "../static/codeserve/holmichapp/test/index.js",
+                        "name": "index.js",
+                        "size": 3698,
+                        "extension": ".js",
+                        "type": "file"
+                    }
+                ],
+                "size": 3698,
+                "type": "directory"
             }
         ],
-        "size": 3757297,
+        "size": 3762181,
         "type": "directory",
         "entry": "../static/codeserve/holmichapp/src/index.js",
         "toggled": true
