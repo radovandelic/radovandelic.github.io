@@ -1,5 +1,5 @@
 var Flickr = require('flickrapi');
-var config = require('../config')
+
 module.exports = (text, config, callback) => {
     var flickrOptions = {
         api_key: config.flickr_key,
@@ -8,7 +8,7 @@ module.exports = (text, config, callback) => {
 
     Flickr.tokenOnly(flickrOptions, (error, flickr) => {
         flickr.photos.search({
-            text: text,
+            text: text,//
             page: 1,
             per_page: 1,
             sort: "relevance",
