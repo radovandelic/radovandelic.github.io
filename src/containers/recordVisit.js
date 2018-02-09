@@ -9,7 +9,8 @@ const recordVisit = (page) => {
                     page: page,
                     browser: window.navigator.userAgent,
                     ip: res.IPv4,
-                    time: Date(Date.now()).toLocaleString().substring(0, 24)
+                    time: Date(Date.now()).toLocaleString().substring(0, 24),
+                    ref: document.referrer
                 }
             }
             q.body = JSON.stringify(q.body);
