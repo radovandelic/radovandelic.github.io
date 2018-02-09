@@ -10,7 +10,7 @@ const recordVisit = (page) => {
                     browser: window.navigator.userAgent,
                     ip: res.IPv4,
                     time: Date(Date.now()).toLocaleString().substring(0, 24),
-                    ref: document.referrer
+                    ref: document.referrer ? document.referrer.split("://")[1] : ""
                 }
             }
             q.body = JSON.stringify(q.body);
