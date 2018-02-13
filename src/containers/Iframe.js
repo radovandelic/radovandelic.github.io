@@ -105,6 +105,10 @@ export default class Iframe extends Component {
                 url = "https://cleancalc.bitballoon.com";
                 github = "https://github.com/radovandelic/cleancalc";
                 break;
+            case "viljuskari":
+                url = "https://viljuskari.gq";
+                github = "https://github.com/radovandelic/viljuskari";
+                break;
             default:
                 break;
         }

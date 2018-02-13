@@ -203,6 +203,30 @@ const descriptions = {
             }
         ],
         logo: "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/082014/js1_0.png"
+    },
+    viljuskari: {
+        url: "https://viljuskari.gq/",
+        github: "https://github.com/radovandelic/viljuskari/",
+        text: "This is a webscraper application developed for a forlift sales and servicing company in Belgrade, Serbia. It gets data about used forklift adverts from several webpages and compiles a list of the best offers based on make, model and price. It started out as a C# Windows application and gradually evolved into it's current form as a C# console application running 24/7 on a LAPP server.",
+        tech: [
+            {
+                name: "C#",
+                url: "https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework"
+            },
+            {
+                name: "PHP",
+                url: "http://www.php.net/"
+            },
+            {
+                name: "PostgreSQL",
+                url: "https://www.postgresql.org/"
+            },
+            {
+                name: "jQuery",
+                url: "https://jquery.com/"
+            }
+        ],
+        logo: "https://data.earthli.com/news/attachments/entry/3418/csharp-icon-clr_tn.png"
     }
 }
 

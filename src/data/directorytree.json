@@ -2610,8 +2610,23 @@
                     {
                         "path": "../static/codeserve/philarios/data",
                         "name": "data",
-                        "children": [],
-                        "size": 0,
+                        "children": [
+                            {
+                                "path": "../static/codeserve/philarios/data/flickr.reflection.getMethods.json",
+                                "name": "flickr.reflection.getMethods.json",
+                                "size": 15205,
+                                "extension": ".json",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/philarios/data/methods",
+                                "name": "methods",
+                                "children": [],
+                                "size": 0,
+                                "type": "directory"
+                            }
+                        ],
+                        "size": 15205,
                         "type": "directory"
                     },
                     {
@@ -3713,7 +3728,7 @@
                         "type": "directory"
                     }
                 ],
-                "size": 33194704,
+                "size": 33209909,
                 "type": "directory"
             }
         ],
@@ -5397,6 +5412,513 @@
         "size": 69246,
         "type": "directory",
         "entry": "../static/codeserve/battleships/web/index.php",
+        "toggled": true
+    },
+    "viljuskari": {
+        "path": "../static/codeserve/viljuskari",
+        "name": "viljuskari",
+        "children": [
+            {
+                "path": "../static/codeserve/viljuskari/README.md",
+                "name": "README.md",
+                "size": 1134,
+                "extension": ".md",
+                "type": "file",
+                "active": true
+            },
+            {
+                "path": "../static/codeserve/viljuskari/backbone",
+                "name": "backbone",
+                "children": [
+                    {
+                        "path": "../static/codeserve/viljuskari/backbone/Program.cs",
+                        "name": "Program.cs",
+                        "size": 42959,
+                        "extension": ".cs",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/backbone/backbone.csproj",
+                        "name": "backbone.csproj",
+                        "size": 258,
+                        "extension": ".csproj",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/backbone/bin",
+                        "name": "bin",
+                        "children": [
+                            {
+                                "path": "../static/codeserve/viljuskari/backbone/bin/Debug",
+                                "name": "Debug",
+                                "children": [
+                                    {
+                                        "path": "../static/codeserve/viljuskari/backbone/bin/Debug/netcoreapp2.0",
+                                        "name": "netcoreapp2.0",
+                                        "children": [
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.deps.json",
+                                                "name": "backbone.deps.json",
+                                                "size": 3300,
+                                                "extension": ".json",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.dll",
+                                                "name": "backbone.dll",
+                                                "size": 21504,
+                                                "extension": ".dll",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.pdb",
+                                                "name": "backbone.pdb",
+                                                "size": 6764,
+                                                "extension": ".pdb",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.runtimeconfig.dev.json",
+                                                "name": "backbone.runtimeconfig.dev.json",
+                                                "size": 204,
+                                                "extension": ".json",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.runtimeconfig.json",
+                                                "name": "backbone.runtimeconfig.json",
+                                                "size": 146,
+                                                "extension": ".json",
+                                                "type": "file"
+                                            }
+                                        ],
+                                        "size": 31918,
+                                        "type": "directory"
+                                    }
+                                ],
+                                "size": 31918,
+                                "type": "directory"
+                            }
+                        ],
+                        "size": 31918,
+                        "type": "directory"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/backbone/db.cs",
+                        "name": "db.cs",
+                        "size": 219,
+                        "extension": ".cs",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/backbone/db.example.cs",
+                        "name": "db.example.cs",
+                        "size": 234,
+                        "extension": ".cs",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/backbone/obj",
+                        "name": "obj",
+                        "children": [
+                            {
+                                "path": "../static/codeserve/viljuskari/backbone/obj/Debug",
+                                "name": "Debug",
+                                "children": [
+                                    {
+                                        "path": "../static/codeserve/viljuskari/backbone/obj/Debug/netcoreapp2.0",
+                                        "name": "netcoreapp2.0",
+                                        "children": [
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.AssemblyInfo.cs",
+                                                "name": "backbone.AssemblyInfo.cs",
+                                                "size": 783,
+                                                "extension": ".cs",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.AssemblyInfoInputs.cache",
+                                                "name": "backbone.AssemblyInfoInputs.cache",
+                                                "size": 41,
+                                                "extension": ".cache",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.csproj.CoreCompileInputs.cache",
+                                                "name": "backbone.csproj.CoreCompileInputs.cache",
+                                                "size": 41,
+                                                "extension": ".cache",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.csproj.FileListAbsolute.txt",
+                                                "name": "backbone.csproj.FileListAbsolute.txt",
+                                                "size": 890,
+                                                "extension": ".txt",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.dll",
+                                                "name": "backbone.dll",
+                                                "size": 21504,
+                                                "extension": ".dll",
+                                                "type": "file"
+                                            },
+                                            {
+                                                "path": "../static/codeserve/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.pdb",
+                                                "name": "backbone.pdb",
+                                                "size": 6764,
+                                                "extension": ".pdb",
+                                                "type": "file"
+                                            }
+                                        ],
+                                        "size": 30023,
+                                        "type": "directory"
+                                    }
+                                ],
+                                "size": 30023,
+                                "type": "directory"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/backbone/obj/backbone.csproj.nuget.cache",
+                                "name": "backbone.csproj.nuget.cache",
+                                "size": 145,
+                                "extension": ".cache",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/backbone/obj/backbone.csproj.nuget.g.props",
+                                "name": "backbone.csproj.nuget.g.props",
+                                "size": 1535,
+                                "extension": ".props",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/backbone/obj/backbone.csproj.nuget.g.targets",
+                                "name": "backbone.csproj.nuget.g.targets",
+                                "size": 948,
+                                "extension": ".targets",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/backbone/obj/project.assets.json",
+                                "name": "project.assets.json",
+                                "size": 52144,
+                                "extension": ".json",
+                                "type": "file"
+                            }
+                        ],
+                        "size": 84795,
+                        "type": "directory"
+                    }
+                ],
+                "size": 160383,
+                "type": "directory"
+            },
+            {
+                "path": "../static/codeserve/viljuskari/html",
+                "name": "html",
+                "children": [
+                    {
+                        "path": "../static/codeserve/viljuskari/html/autor.php",
+                        "name": "autor.php",
+                        "size": 455,
+                        "extension": ".php",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/db.example.php",
+                        "name": "db.example.php",
+                        "size": 123,
+                        "extension": ".php",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/db.php",
+                        "name": "db.php",
+                        "size": 107,
+                        "extension": ".php",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/images",
+                        "name": "images",
+                        "children": [
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/body2.png",
+                                "name": "body2.png",
+                                "size": 145,
+                                "extension": ".png",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_body.png",
+                                "name": "tooplate_body.png",
+                                "size": 1226,
+                                "extension": ".png",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_btn_01.png",
+                                "name": "tooplate_btn_01.png",
+                                "size": 655,
+                                "extension": ".png",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_btn_02.png",
+                                "name": "tooplate_btn_02.png",
+                                "size": 463,
+                                "extension": ".png",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_divider.jpg",
+                                "name": "tooplate_divider.jpg",
+                                "size": 2513,
+                                "extension": ".jpg",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_ex.png",
+                                "name": "tooplate_ex.png",
+                                "size": 554,
+                                "extension": ".png",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_header.jpg",
+                                "name": "tooplate_header.jpg",
+                                "size": 63574,
+                                "extension": ".jpg",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_in.png",
+                                "name": "tooplate_in.png",
+                                "size": 574,
+                                "extension": ".png",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_list.png",
+                                "name": "tooplate_list.png",
+                                "size": 285,
+                                "extension": ".png",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_logo.png",
+                                "name": "tooplate_logo.png",
+                                "size": 5955,
+                                "extension": ".png",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/images/tooplate_menu_hover.png",
+                                "name": "tooplate_menu_hover.png",
+                                "size": 162,
+                                "extension": ".png",
+                                "type": "file"
+                            }
+                        ],
+                        "size": 76106,
+                        "type": "directory"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/index.php",
+                        "name": "index.php",
+                        "size": 6576,
+                        "extension": ".php",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/logins",
+                        "name": "logins",
+                        "children": [
+                            {
+                                "path": "../static/codeserve/viljuskari/html/logins/error.php",
+                                "name": "error.php",
+                                "size": 470,
+                                "extension": ".php",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/logins/includes",
+                                "name": "includes",
+                                "children": [
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/includes/db_connect.php",
+                                        "name": "db_connect.php",
+                                        "size": 131,
+                                        "extension": ".php",
+                                        "type": "file"
+                                    },
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/includes/functions.php",
+                                        "name": "functions.php",
+                                        "size": 6470,
+                                        "extension": ".php",
+                                        "type": "file"
+                                    },
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/includes/logout.php",
+                                        "name": "logout.php",
+                                        "size": 453,
+                                        "extension": ".php",
+                                        "type": "file"
+                                    },
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/includes/process_login.php",
+                                        "name": "process_login.php",
+                                        "size": 600,
+                                        "extension": ".php",
+                                        "type": "file"
+                                    },
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/includes/psl-config.php",
+                                        "name": "psl-config.php",
+                                        "size": 350,
+                                        "extension": ".php",
+                                        "type": "file"
+                                    },
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/includes/register.inc.php",
+                                        "name": "register.inc.php",
+                                        "size": 3510,
+                                        "extension": ".php",
+                                        "type": "file"
+                                    }
+                                ],
+                                "size": 11514,
+                                "type": "directory"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/logins/js",
+                                "name": "js",
+                                "children": [
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/js/JavaScript-1.js",
+                                        "name": "JavaScript-1.js",
+                                        "size": 15841,
+                                        "extension": ".js",
+                                        "type": "file"
+                                    },
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/js/forms.js",
+                                        "name": "forms.js",
+                                        "size": 2423,
+                                        "extension": ".js",
+                                        "type": "file"
+                                    },
+                                    {
+                                        "path": "../static/codeserve/viljuskari/html/logins/js/sha512.js",
+                                        "name": "sha512.js",
+                                        "size": 15841,
+                                        "extension": ".js",
+                                        "type": "file"
+                                    }
+                                ],
+                                "size": 34105,
+                                "type": "directory"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/logins/login.php",
+                                "name": "login.php",
+                                "size": 1350,
+                                "extension": ".php",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/logins/protected_page.php",
+                                "name": "protected_page.php",
+                                "size": 5572,
+                                "extension": ".php",
+                                "type": "file"
+                            },
+                            {
+                                "path": "../static/codeserve/viljuskari/html/logins/register_success.php",
+                                "name": "register_success.php",
+                                "size": 376,
+                                "extension": ".php",
+                                "type": "file"
+                            }
+                        ],
+                        "size": 53387,
+                        "type": "directory"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/menuvi.js",
+                        "name": "menuvi.js",
+                        "size": 3894,
+                        "extension": ".js",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/pgsqlviljuskari.php",
+                        "name": "pgsqlviljuskari.php",
+                        "size": 4840,
+                        "extension": ".php",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/pgvi.js",
+                        "name": "pgvi.js",
+                        "size": 862,
+                        "extension": ".js",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/protected_page.php",
+                        "name": "protected_page.php",
+                        "size": 5700,
+                        "extension": ".php",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/styles.css",
+                        "name": "styles.css",
+                        "size": 4041,
+                        "extension": ".css",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/tehnologije.php",
+                        "name": "tehnologije.php",
+                        "size": 703,
+                        "extension": ".php",
+                        "type": "file"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/testing",
+                        "name": "testing",
+                        "children": [
+                            {
+                                "path": "../static/codeserve/viljuskari/html/testing/errors.txt",
+                                "name": "errors.txt",
+                                "size": 0,
+                                "extension": ".txt",
+                                "type": "file"
+                            }
+                        ],
+                        "size": 0,
+                        "type": "directory"
+                    },
+                    {
+                        "path": "../static/codeserve/viljuskari/html/tooplate_style.css",
+                        "name": "tooplate_style.css",
+                        "size": 3291,
+                        "extension": ".css",
+                        "type": "file"
+                    }
+                ],
+                "size": 160085,
+                "type": "directory"
+            }
+        ],
+        "size": 321602,
+        "type": "directory",
+        "entry": "../static/codeserve/viljuskari/README.md",
         "toggled": true
     }
 }

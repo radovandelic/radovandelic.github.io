@@ -1,53 +1,53 @@
 const fs = require('fs');
 const path = require('path');
 const dirTree = require('directory-tree');
-
+var tree = {};
 //git clone the relevant projects before proceeding
 
-const apocryphon = dirTree(__dirname + "/" + 'apocryphon', { exclude: /(\.git$|\.gitignore$)/ });
-var philarios = dirTree(__dirname + "/" + 'philarios', { exclude: /(\.git$|\.gitignore$)/ });
-philarios = {
+const apocryphon = dirTree(__dirname + "/apocryphon", { exclude: /(\.git$|\.gitignore$)/ });
+const philarios = dirTree(__dirname + "/philarios", { exclude: /(\.git$|\.gitignore$)/ });
+tree.philarios = {
     name: 'philarios',
     type: 'directory',
     children: [apocryphon, philarios]
 }
 
-const holmichapp = dirTree(__dirname + "/" + 'holmichapp', { exclude: /(\.git$|\.gitignore$)/ });
-const rankerjs = dirTree(__dirname + "/" + 'rankerjs', { exclude: /(\.git$|\.gitignore$)/ });
-const merchantjs = dirTree(__dirname + "/" + 'merchantjs', { exclude: /(\.git$|\.gitignore$)/ });
-const starbook = dirTree(__dirname + "/" + 'starbook', { exclude: /(\.git$|\.gitignore$)/ });
-const cleancalc = dirTree(__dirname + "/" + 'cleancalc', { exclude: /(\.git$|\.gitignore$)/ });
-const battleships = dirTree(__dirname + "/" + 'battleships', { exclude: /(\.git$|\.gitignore$)/ });
+tree.holmichapp = dirTree(__dirname + "/holmichapp", { exclude: /(\.git$|\.gitignore$)/ });
+tree.rankerjs = dirTree(__dirname + "/rankerjs", { exclude: /(\.git$|\.gitignore$)/ });
+tree.merchantjs = dirTree(__dirname + "/merchantjs", { exclude: /(\.git$|\.gitignore$)/ });
+tree.starbook = dirTree(__dirname + "/starbook", { exclude: /(\.git$|\.gitignore$)/ });
+tree.cleancalc = dirTree(__dirname + "/cleancalc", { exclude: /(\.git$|\.gitignore$)/ });
+tree.battleships = dirTree(__dirname + "/battleships", { exclude: /(\.git$|\.gitignore$)/ });
+tree.viljuskari = dirTree(__dirname + "/viljuskari", { exclude: /(\.git$|\.gitignore$)/ });
 
-philarios.children[0].toggled = true; philarios.children[0].children[11].toggled = true;
-philarios.entry = '../static/codeserve/apocryphon/src/index.js';
-philarios.children[0].children[11].children[6].active = true;
+tree.philarios.children[0].toggled = true; tree.philarios.children[0].children[11].toggled = true;
+tree.philarios.entry = '../static/codeserve/apocryphon/src/index.js';
+tree.philarios.children[0].children[11].children[6].active = true;
 
-holmichapp.children[7].toggled = true;
-holmichapp.entry = '../static/codeserve/holmichapp/src/index.js';
-holmichapp.children[7].children[6].active = true;
+tree.holmichapp.children[7].toggled = true;
+tree.holmichapp.entry = '../static/codeserve/holmichapp/src/index.js';
+tree.holmichapp.children[7].children[6].active = true;
 
-rankerjs.children[1].toggled = true;
-rankerjs.entry = '../static/codeserve/rankerjs/app/app.js';
-rankerjs.children[1].children[0].active = true;
+tree.rankerjs.children[1].toggled = true;
+tree.rankerjs.entry = '../static/codeserve/rankerjs/app/app.js';
+tree.rankerjs.children[1].children[0].active = true;
 
-merchantjs.children[7].toggled = true;
-merchantjs.entry = '../static/codeserve/merchantjs/src/index.js';
-merchantjs.children[7].children[6].active = true;
+tree.merchantjs.children[7].toggled = true;
+tree.merchantjs.entry = '../static/codeserve/merchantjs/src/index.js';
+tree.merchantjs.children[7].children[6].active = true;
 
-starbook.entry = '../static/codeserve/starbook/index.html';
-starbook.children[0].active = true;
+tree.starbook.entry = '../static/codeserve/starbook/index.html';
+tree.starbook.children[0].active = true;
 
-cleancalc.entry = '../static/codeserve/cleancalc/index.html';
-cleancalc.children[2].active = true;
+tree.cleancalc.entry = '../static/codeserve/cleancalc/index.html';
+tree.cleancalc.children[2].active = true;
 
-battleships.children[5].toggled = true;
-battleships.entry = '../static/codeserve/battleships/web/index.php';
-battleships.children[5].children[2].active = true;
+tree.battleships.children[5].toggled = true;
+tree.battleships.entry = '../static/codeserve/battleships/web/index.php';
+tree.battleships.children[5].children[2].active = true;
 
-const tree = {
-    philarios, holmichapp, rankerjs, merchantjs, starbook, cleancalc, battleships
-}
+tree.viljuskari.entry = '../static/codeserve/viljuskari/README.md';
+tree.viljuskari.children[0].active = true;
 
 for (var key in tree) {
     tree[key].toggled = true;
