@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
+import recordVisit from './recordVisit';
 
 export default function Navbar() {
     return (
@@ -65,7 +66,9 @@ export default function Navbar() {
                                 Contact
                             </Link>
                             <span className="navbar-item">
-                                <a className="button is-white is-outlined is-small" href="https://github.com/radovandelic/radovandelic.github.io/tree/source" rel="noopener noreferrer nofollow" target="_blank">
+                                <a className="button is-white is-outlined is-small" onClick={() => { recordVisit('source'); }}
+                                    href="https://github.com/radovandelic/radovandelic.github.io/tree/source"
+                                    rel="noopener noreferrer nofollow" target="_blank">
                                     <span className="icon">
                                         <i className="fa fa-github"></i>
                                     </span>

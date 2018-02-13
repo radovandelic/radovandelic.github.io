@@ -63,6 +63,7 @@ export default class Iframe extends Component {
                 break;
 
             case "github":
+                recordVisit(this.state.project + "/github");
                 window.open(this.state.github, '_blank');
                 if (this.state.github === "https://github.com/radovandelic/apocryphon") {
                     window.open("https://github.com/radovandelic/philarios", '_blank');
