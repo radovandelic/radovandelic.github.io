@@ -8,14 +8,7 @@
 
 # production
 /build
-/public/static/codeserve/apocryphon
-/public/static/codeserve/philarios
-/public/static/codeserve/holmichapp
-/public/static/codeserve/rankerjs
-/public/static/codeserve/merchantjs
-/public/static/codeserve/starbook
-/public/static/codeserve/cleancalc
-/public/static/codeserve/battleships
+/public/static/codeserve
 
 # misc
 .DS_Store
