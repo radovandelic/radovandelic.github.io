@@ -1,0 +1,10 @@
+/home/valter/Projects/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.deps.json
+/home/valter/Projects/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.runtimeconfig.json
+/home/valter/Projects/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.runtimeconfig.dev.json
+/home/valter/Projects/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.dll
+/home/valter/Projects/viljuskari/backbone/bin/Debug/netcoreapp2.0/backbone.pdb
+/home/valter/Projects/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.csproj.CoreCompileInputs.cache
+/home/valter/Projects/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.AssemblyInfoInputs.cache
+/home/valter/Projects/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.AssemblyInfo.cs
+/home/valter/Projects/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.dll
+/home/valter/Projects/viljuskari/backbone/obj/Debug/netcoreapp2.0/backbone.pdb

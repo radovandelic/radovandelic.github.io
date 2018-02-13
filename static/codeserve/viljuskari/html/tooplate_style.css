@@ -1,0 +1,161 @@
+.pages {
+	text-align: center;
+}
+
+th {
+	text-align: left;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 1.7em; 
+	background-image: url(images/tooplate_body.png);
+	background-size: auto 100%;
+	background-repeat: repeat-x;
+	background-position: top;
+	height: 100%;
+}
+
+
+a, a:link, a:visited { 
+	color: white;
+	/*color: #B8B8B8;*/ 
+	font-weight: normal; 
+	text-decoration: underline; 
+	font-size: 12px; 
+}
+
+a:hover { text-decoration: none; }
+
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+   text-decoration: none;
+}
+
+a.more:hover { 
+	color: #fff; 
+	text-shadow: 1px 1px 1px #999; 
+}
+
+a.more_small { 
+	display: inline-block; 
+	width: 76px; 
+	line-height: 21px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-weight: bold; 
+	background: url(images/tooplate_btn_02.png) no-repeat top center; 
+	color: #333; 
+	text-shadow: 1px 1px 1px #fed450; 
+}
+
+a.more:hover { 
+	color: #fff; 
+	text-shadow: 1px 1px 1px #999; 
+}
+
+p { margin: 0 0 10px 0; padding: 0; }
+img { border: none; }
+blockquote { font-style: italic; margin: 0 0 0 10px;}
+cite { font-weight: bold; color:#3d8e7d; }
+cite span { color: #3d8e7d; }
+em { color: #000 }
+
+h1, h2, h3, h4, h5, h6 { color: #000; font-weight: normal; }
+h1 { font-size: 34px; margin: 0 0 20px; padding: 5px 0 }
+h2 { font-size: 28px; margin: 0 0 15px; padding: 5px 0; }
+h3 { font-size: 24px; margin: 0 0 15px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+.h60 { height: 60px }
+
+
+/* menu */
+
+#tooplate_menu { 
+	clear: both;
+	width: 960px; 
+	height: 35px; 
+}
+
+#tooplate_menu ul { 
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+#tooplate_menu > ul > li { 
+	padding: 0; 
+	margin: 0; 
+	display: inline; 
+}
+
+#tooplate_menu > ul > li > a {
+	float: left;
+	display: block;
+    line-height: 35px;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #f00;	
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	outline: none;
+}
+
+#tooplate_menu ul li a:hover, #tooplate_menu ul .current {
+	background: url(images/tooplate_menu_hover.png) repeat-x repeat-y bottom;
+	color: #fff;
+}
+
+/* end of menu */
+
+#tooplate_middle {
+	clear: both;
+	/*width: 500px;*/
+	padding: 0px 0px 0px 0; 
+	color: white;
+#pt2
+{
+	background-color: #ececec;
+	background-image: url(images/body2.png);
+	background-repeat: repeat-y;
+	background-position: top;
+}
+
+#tooplate_middle h1 { color: #eebc25; padding: 0; margin: 0 0 10px }
+#tooplate_middle em { font-size: 18px; font-weight: 700; color: #fff }
+#tooplate_middle .tooplate_list li { color: #eebc25; font-size: 14px }
+#tooplate_middle .col_w220 { width: 220px }
+
+#tooplate_main {
+	clear: both;
+	/*width: 960px;*/
+	padding: 40px 0;
+}
+
+#tooplate_footer {
+	clear: both;
+	width: 940px;
+	padding: 10px 0; 
+	color: #ccc;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#tooplate_footer a { 
+	color: #fff; 
+	text-decoration: underline; 
+}
