@@ -402,6 +402,7 @@ namespace backbone
                                 StreamWriter sw = new StreamWriter("/var/www/html/testing/errors.txt", true);
                                 sw.WriteLine(DateTime.Now.ToShortDateString() + " /// " + DateTime.Now.ToShortTimeString());
                                 sw.WriteLine("Error 102202");
+                                sw.WriteLine(url);
                                 sw.WriteLine(xcp.ToString());
                                 sw.WriteLine(" ____________________________________________________________");
                                 sw.Close();
@@ -675,11 +676,13 @@ namespace backbone
                 {
                     htmlCode = client.DownloadString
                         (@"http://www.forklift-international.com/eu/e/staplersuche.php?bhvon=0&hhvon=0&fhvon=0&bhbis=9000&hhbis=30000&fhbis=4000&baujahr=0&hatbild=0&tkvon=0&tkbis=100000&preisvon=0&preisbis=1000000&antriebsart=*&plz=&entfernung=0&Bauart=alle&reifen=*&Fabrikat=" + marka + "&masttypid=alle&landid=10001&bjbis=2014&sonderbit=0&numbers=100&sortorder=2&page=" + k.ToString());
+                    //Console.WriteLine("http://www.forklift-international.com/eu/e/staplersuche.php?bhvon=0&hhvon=0&fhvon=0&bhbis=9000&hhbis=30000&fhbis=4000&baujahr=0&hatbild=0&tkvon=0&tkbis=100000&preisvon=0&preisbis=1000000&antriebsart=*&plz=&entfernung=0&Bauart=alle&reifen=*&Fabrikat=" + marka + "&masttypid=alle&landid=10001&bjbis=2014&sonderbit=0&numbers=100&sortorder=2&page=" + k.ToString());
                     // = getBetween(htmlCode, " ", "Latest entity-items");
                     //StringBuilder sb = new StringBuilder();
+                    htmlCode = getBetween(htmlCode, "results\"", "<nav ");
                     for (int i = 1; i <= 100; i++)
                     {
-                        url = getBetween(htmlCode, "a class=\"detailLink\" href=\"", "\"");
+                        url = getBetween(htmlCode, "href=\"", "\"");
                         if (url == "NULL")
                         {
                             i = 101;
@@ -693,14 +696,13 @@ namespace backbone
                                 htmlCodeTarget = client.DownloadString
                                     (url);
 
-                                cena = getBetween(htmlCodeTarget, "Price excl. VAT", "</div>").Trim();
-                                cena = getBetween(cena, "\">", "EUR").Trim().Replace(".", "");
+                                cena = getBetween(htmlCodeTarget, "Price excl. VAT", "</td>").Trim();
+                                cena = getBetween(cena, "<td>", "EUR").Trim().Replace(".", "");
 
                                 if (cena != "NULL" && cena != "on request")
                                 {
-
-                                    model = getBetween(htmlCodeTarget, ">Model:<", "</div>");
-                                    model = getBetween(model, "\">", "<").Trim().Replace(",", "");
+                                    model = getBetween(htmlCodeTarget, ">Model:<", "/td>");
+                                    model = getBetween(model, "<td>", "<").Trim().Replace(",", "");
                                     model = model.Replace(" ", "");
                                     model = model.Replace("-", "");
                                     model = model.Replace("/", "");
@@ -715,17 +717,17 @@ namespace backbone
                                     //tip = getBetween(htmlCodeTarget, strStartTip, strEndTr);
                                     //tip = getBetween(tip, "d>", "<");
 
-                                    godina = getBetween(htmlCodeTarget, ">YOM:<", "</div>");
-                                    godina = getBetween(godina, "\">", "<").Trim();
+                                    godina = getBetween(htmlCodeTarget, ">YOM:<", "/td>");
+                                    godina = getBetween(godina, "<td>", "<").Trim();
 
-                                    radnihSati = getBetween(htmlCodeTarget, ">Running hours:<", "/div");
-                                    radnihSati = getBetween(radnihSati, "\">", "<").Trim().Replace(".", "");
+                                    radnihSati = getBetween(htmlCodeTarget, ">Running hours:<", "/td");
+                                    radnihSati = getBetween(radnihSati, "<td>", "<").Trim().Replace(".", "");
 
-                                    kapacitetKG = getBetween(htmlCodeTarget, ">Capacity:<", "/div");
-                                    kapacitetKG = getBetween(kapacitetKG, "\">", "kg").Trim().Replace(".", "");
+                                    kapacitetKG = getBetween(htmlCodeTarget, ">Capacity:<", "/td");
+                                    kapacitetKG = getBetween(kapacitetKG, "<td>", "kg").Trim().Replace(".", "");
 
-                                    motor = getBetween(htmlCodeTarget, ">Engine type:<", "/div");
-                                    motor = getBetween(motor, "\">", "<").Trim();
+                                    motor = getBetween(htmlCodeTarget, ">Engine type:<", "/td");
+                                    motor = getBetween(motor, "<td>", "<").Trim();
                                     if (motor == "Diesel")
                                     {
                                         motor = "Dizel";
@@ -739,19 +741,21 @@ namespace backbone
                                         motor = "Električni";
                                     }
 
-                                    visinaPodizanja = getBetween(htmlCodeTarget, ">Lift. Height:<", "/div");
-                                    visinaPodizanja = getBetween(visinaPodizanja, "\">", "mm").Trim().Replace(".", "");
+                                    visinaPodizanja = getBetween(htmlCodeTarget, "Lift. Height:", "/td");
+                                    visinaPodizanja = getBetween(visinaPodizanja, "<td>", "mm").Trim().Replace(".", "");
 
-                                    visina = getBetween(htmlCodeTarget, ">Closed height:<", "/div");
-                                    visina = getBetween(visina, "\">", "mm").Trim().Replace(".", "");
+                                    visina = getBetween(htmlCodeTarget, ">Closed height:<", "/td");
+                                    visina = getBetween(visina, "<td>", "mm").Trim().Replace(".", "");
 
-                                    drzava = getBetween(htmlCodeTarget, "addressCountry\">", "<").Trim();
+                                    drzava = getBetween(htmlCodeTarget, "col-lg-12 col-sm-8\"", "<hr>");
+                                    drzava = getBetween(drzava, "<br>", "/p>");
+                                    drzava = getBetween(drzava, "<br>", "<").Trim();
                                     drzava = drzavaPrevodForkliftInt(drzava);
 
-                                    duzinaVilica = getBetween(htmlCodeTarget, ">Forks:<", "/div");
+                                    duzinaVilica = getBetween(htmlCodeTarget, ">Fork length:<", "/td");
                                     if (duzinaVilica.Contains("mm"))
                                     {
-                                        duzinaVilica = getBetween(duzinaVilica, "\">", "mm").Trim().Replace(".", "");
+                                        duzinaVilica = getBetween(duzinaVilica, "<td>", "mm").Trim().Replace(".", "");
                                     }
                                     else
                                     {
@@ -767,8 +771,8 @@ namespace backbone
                                         duzinaVilica = "NULL";
                                     }
 
-                                    nacinPodizanja = getBetween(htmlCodeTarget, ">Mast type:<", "/div");
-                                    nacinPodizanja = getBetween(nacinPodizanja, "\">", "<").Trim();
+                                    nacinPodizanja = getBetween(htmlCodeTarget, ">Mast type:<", "/td");
+                                    nacinPodizanja = getBetween(nacinPodizanja, "<td>", "<").Trim();
                                     if (nacinPodizanja.Contains("Duplex"))
                                     {
                                         nacinPodizanja = "Duplex";
@@ -792,8 +796,9 @@ namespace backbone
 									/*Console.WriteLine (" Model: " +model + "\nCena: " + cena + "\nGodina: " +  godina + "\n"  + motor + "\n" +
 									              radnihSati + "\n" + kapacitetKG + "\n" + visinaPodizanja + "\n" + visina + "\n" +  nacinPodizanja + 
 									              "\n" + drzava + "\n" + duzinaVilica + "\n" + url);
-									Console.WriteLine (" ____________________________________________________________");*/
-									//sw.Close ();
+									Console.WriteLine (" ____________________________________________________________");
+									*/
+                                    //sw.Close ();
 									//sw.Dispose ();
 
 
@@ -807,7 +812,7 @@ namespace backbone
                                     }
                                 }
                             }
-                            htmlCode = splitStrings(htmlCode, "a class=\"detailLink\" href=\"");
+                            htmlCode = splitStrings(htmlCode, "href=\"");
                         }
                     }
                 }
@@ -817,7 +822,7 @@ namespace backbone
 
         public static void truncateTable()
         {
-            IDbConnection conn = new NpgsqlConnection("Server=localhost;Port=5432;UserId=v;Password=m0stly.harml355;Database=v; CommandTimeout=60; Timeout=20");
+            IDbConnection conn = new NpgsqlConnection(db.connectionString);
             IDbCommand cmd = conn.CreateCommand();
             cmd.CommandTimeout = 100;
             cmd.CommandText = "TRUNCATE TABLE viljuskari;";
@@ -853,8 +858,12 @@ namespace backbone
         {
             if (cena != "0" && cena != "NULL" && model != "NULL" && godina != "NULL" && url != "NULL")
             {
-                //db connectionString = new db.connectionString;
-                //"Server=localhost;Port=5432;UserId=v;Password=m0stly.harml355;Database=v; CommandTimeout=60; Timeout=20"
+                duzinaVilica = duzinaVilica.Replace(",", "");
+                duzinaVilica = duzinaVilica.Replace(".", "");
+                visina = visina.Replace(",", "");
+                visina = visina.Replace(".", "");
+                visinaPodizanja = visinaPodizanja.Replace(",", "");
+                visinaPodizanja = visinaPodizanja.Replace(".", "");
                 IDbConnection conn = new NpgsqlConnection(db.connectionString);
                 IDbCommand cmd = conn.CreateCommand();
                 cmd.CommandTimeout = 100;
@@ -934,15 +943,15 @@ namespace backbone
         }
         public static void Main(string[] args)
         {								
-            TimeSpan interval = new TimeSpan (6, 0, 0);
+            TimeSpan interval = new TimeSpan (12, 0, 0);
 			while (true) {					
 				truncateTable ();					
-				puniBazuMascusRs ("Jungheinrich");					
-				//puniBazuMobileDe ("Jungheinrich", "12800");					
-				puniBazuForkliftInternational ("Jungheinrich");					
-				puniBazuMascusRs ("Linde");					
+				puniBazuForkliftInternational ("Jungheinrich");	
+				puniBazuForkliftInternational ("Linde");				
+				puniBazuMascusRs ("Jungheinrich");						
+				puniBazuMascusRs ("Linde");								
+				//puniBazuMobileDe ("Jungheinrich", "12800");	
 				//puniBazuMobileDe ("Linde", "15600");
-				puniBazuForkliftInternational ("Linde");
 				Thread.Sleep (interval);
 			}
 
@@ -951,7 +960,7 @@ namespace backbone
         {
             string sql = "SELECT COUNT(*) FROM viljuskari WHERE url = '"
                 + url + "';";
-            IDbConnection conn = new NpgsqlConnection("Server=localhost;Port=5432;UserId=v;Password=m0stly.harml355;Database=v; CommandTimeout=5; Timeout=5");
+            IDbConnection conn = new NpgsqlConnection(db.connectionString);
 
             IDbCommand cmd = conn.CreateCommand();
             cmd.CommandText = sql;
