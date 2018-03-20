@@ -28,6 +28,10 @@ export default function Navbar() {
                                     Projects
                                 </a>
                                 <div className="navbar-dropdown">
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > cookwork'; }}
+                                        to="/projects/cookwork" id="cookwork" className="navbar-item">
+                                        cookwork
+                                    </Link>
                                     <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > philarios'; }}
                                         to="/projects/philarios" id="philarios" className="navbar-item">
                                         philarios
@@ -35,14 +39,6 @@ export default function Navbar() {
                                     <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > holmichapp'; }}
                                         to="/projects/holmichapp" id="holmichapp" className="navbar-item">
                                         holmichapp
-                                    </Link>
-                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > viljuskari'; }}
-                                        to="/projects/viljuskari" id="viljuskari" className="navbar-item">
-                                        viljuskari
-                                    </Link>
-                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > battleships'; }}
-                                        to="/projects/battleships" id="battleships" className="navbar-item">
-                                        battleships
                                     </Link>
                                     <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > merchantjs'; }}
                                         to="/projects/merchantjs" id="merchantjs" className="navbar-item">
@@ -56,9 +52,13 @@ export default function Navbar() {
                                         to="/projects/starbook" id="starbook" className="navbar-item">
                                         starbook
                                     </Link>
-                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > cleancalc'; }}
-                                        to="/projects/cleancalc" id="cleancalc" className="navbar-item">
-                                        MVC calculator
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > battleships'; }}
+                                        to="/projects/battleships" id="battleships" className="navbar-item">
+                                        battleships
+                                    </Link>
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > viljuskari'; }}
+                                        to="/projects/viljuskari" id="viljuskari" className="navbar-item">
+                                        viljuskari
                                     </Link>
                                 </div>
                             </div>

@@ -60,26 +60,31 @@ export default function Intro() {
                             <p>
                                 <strong><a href="https://www.linkedin.com/in/radovan-delic/" rel="noopener noreferrer nofollow" target="_blank">Intro </a></strong>
                                 <br />
-                                Hi, my name is Radovan Delić and this is my portfolio.
-                            <br />
+                                Hi, I'm Radovan Delić and welcome to my portfolio.
                                 <br />
-                                I am a Full Stack Developer currently based in Brussels, Belgium.
-                            I am relatively new to web development but so far I have built
-                            many small to medium sized projects in multiple languages and frameworks.
-                            <br />
-                                Also, in 2017 I competed in the&nbsp;
+                                <br />
+                                I am a Full Stack Developer currently based in Brussels, Belgium.&nbsp;
+                                My current core competence is in Node.js, React, MongoDB and PostgreSQl, but I am also familiar with many other languages and frameworks, e.g C#, PHP, Python, Bootstrap etc.
+                                <br />
+                                <br />
+                                In 2017 I competed in the&nbsp;
                             <strong><a href="https://www.hackerrank.com/results/projecteuler/r_delic"
                                     rel="noopener noreferrer nofollow" target="_blank">Project Euler</a></strong>&nbsp;
                             challenge on <a href="https://www.hackerrank.com" rel="noopener noreferrer nofollow" target="_blank">HackerRank</a> and scored in the top 2% out of ~70k participants
                             with <strong><a href="https://www.hackerrank.com/results/projecteuler/r_delic"
                                     rel="noopener noreferrer nofollow" target="_blank">32/32</a></strong> perfect solutions.
-                            <br />
                                 <br />
-                                Feel free to check out some of my demo projects in the navbar.
-                            <br />
+                                <br />
+                                Feel free to check out some of my demo projects in the navbar, in reverse chronological order.
+                                <br />
+                                Keep in mind that some of the older projects feature quite unreadable spaghetti code,
+                                but I have grown emotionally attached to them and also,
+                                they remind me how far I have come as a developer, so I intend to keep them on my portfolio forever.
+                                <br />
                                 <br />
                                 Q: What is my favorite language/framework?
-                            <br />A: Whatever gets the job done. (and has decent documentation and community support ofc)
+                                <br />
+                                A: Whatever gets the job done. (and has decent documentation and community support ofc)
                             </p>
 
 

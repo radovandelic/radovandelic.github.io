@@ -1,5 +1,33 @@
 
 const descriptions = {
+    cookwork: {
+        url: "https://cookwork.eu",
+        github: "",
+        text: "A marketplace for commercial kitchens in Belgium currently under construction for Co-oking SPRL.",
+        tech: [
+            {
+                name: "Node.js",
+                url: "https://nodejs.or/"
+            },
+            {
+                name: "Express.js",
+                url: "https://expressjs.com/"
+            },
+            {
+                name: "React",
+                url: "https://reactjs.org/"
+            },
+            {
+                name: "Redux",
+                url: "https://redux.js.org/"
+            },
+            {
+                name: "MongoDB",
+                url: "https://www.mongodb.com/"
+            },
+        ],
+        logo: "https://cookwork.eu/static/media/cookwork-circle.png"
+    },
     philarios: {
         url: "https://philarios.ml",
         github: "https://github.com/radovandelic/apocryphon/",

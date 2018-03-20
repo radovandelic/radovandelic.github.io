@@ -51,9 +51,11 @@ export default function Description(props) {
                             <a className="level-item" href={url} rel="noopener noreferrer nofollow" target="_blank">
                                 <span className="icon is-small"><i className="fa fa-external-link"></i></span>
                             </a>
-                            <a className="level-item" href={github} rel="noopener noreferrer nofollow" target="_blank">
-                                <span className="icon is-small"><i className="fa fa-github"></i></span>
-                            </a>
+                            {github ?
+                                <a className="level-item" href={github} rel="noopener noreferrer nofollow" target="_blank">
+                                    <span className="icon is-small"><i className="fa fa-github"></i></span>
+                                </a>
+                                : null}
                         </div>
                     </nav>
                 </div>

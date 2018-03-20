@@ -63,10 +63,14 @@ export default class Iframe extends Component {
                 break;
 
             case "github":
-                recordVisit(this.state.project + "/github");
-                window.open(this.state.github, '_blank');
-                if (this.state.github === "https://github.com/radovandelic/apocryphon") {
-                    window.open("https://github.com/radovandelic/philarios", '_blank');
+                if (this.state.project === "cookwork") {
+                    alert("The client has requested the code for this project to remain private. Sorry.")
+                } else {
+                    recordVisit(this.state.project + "/github");
+                    window.open(this.state.github, '_blank');
+                    if (this.state.github === "https://github.com/radovandelic/apocryphon") {
+                        window.open("https://github.com/radovandelic/philarios", '_blank');
+                    }
                 }
                 break;
 
@@ -78,6 +82,10 @@ export default class Iframe extends Component {
         var url = "https://philarios.ml";
         var github = "https://github.com/radovandelic";
         switch (newProject) {
+            case "cookwork":
+                url = "https://cookwork.eu";
+                github = "https://github.com/radovandelic";
+                break;
             case "philarios":
                 url = "https://philarios.ml";
                 github = "https://github.com/radovandelic/apocryphon";
@@ -136,7 +144,11 @@ export default class Iframe extends Component {
                 break;
             case 'code':
                 recordVisit(match.params.project + "/code");
-                frame = <TreeView data={dirTree[match.params.project]} />;
+                if (match.params.project === "cookwork") {
+                    alert("The client has requested the code for this project to remain private. Sorry.")
+                } else {
+                    frame = <TreeView data={dirTree[match.params.project]} />;
+                }
                 break;
             default:
                 frame = <Description project={match.params.project} />;
