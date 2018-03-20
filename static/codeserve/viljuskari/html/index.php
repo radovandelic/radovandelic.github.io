@@ -1,21 +1,23 @@
-<?php	
-    include "db.php";
-	session_start();
-    unset($_SESSION['motor']);
-	unset($_SESSION['cijenaod']);
-	unset($_SESSION['cijenado']);
-	unset($_SESSION['marka']);
-	unset($_SESSION['model']);
-	unset($_SESSION['page']);
-	unset($_SESSION['ponuda']);
-	session_destroy();
-	$user_ip = getenv('REMOTE_ADDR');
-	$geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
-	$country = $geo["geoplugin_countryName"];
-	$city = $geo["geoplugin_city"];
-	$file = fopen("visitors.txt", "a");
-	fwrite($file,(date("H:i:s, d/m/y")."\n".$city.", ".$country."\n________________________\n"));
-	fclose($file);	
+<?php
+include "db.php";
+session_start();
+unset($_SESSION['motor']);
+unset($_SESSION['cijenaod']);
+unset($_SESSION['cijenado']);
+unset($_SESSION['marka']);
+unset($_SESSION['model']);
+unset($_SESSION['page']);
+unset($_SESSION['ponuda']);
+session_destroy();
+$user_ip = getenv('REMOTE_ADDR');
+$geo = unserialize(file_get_contents("http://www.geoplugin.net/php.gp?ip=$user_ip"));
+$country = $geo["geoplugin_countryName"];
+$city = $geo["geoplugin_city"];
+if ($country != "Belgium") {
+    $file = fopen("visitors.txt", "a");
+    fwrite($file, (date("H:i:s, d/m/y") . "\n" . $city . ", " . $country . "\n________________________\n"));
+    fclose($file);
+}
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -23,8 +25,8 @@
 <head>
    <meta charset='utf-8'>
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Smart Buyer Viljuskari</title> 
-	<meta name="keywords" content="povoljni automobili,polovni automobili, rabljena vozila, jeftini auti" /> 
+	<title>Smart Buyer Viljuskari</title>
+	<meta name="keywords" content="povoljni automobili,polovni automobili, rabljena vozila, jeftini auti" />
 	<meta name="description" content="Agregator najpovoljnijih vozila na Europskom tržištu" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -34,7 +36,7 @@
 
 </head>
 <body>
-	
+
 <div id='cssmenu'>
 <ul>
    <li class='active'><a name="reset" href='/'><span>Naslovna</span></a></li>
@@ -47,10 +49,9 @@
       </ul>
    </li>
    <?php
-   if(isset($_SESSION['marka'])) { echo "<li class='has-sub' id='".$_SESSION['marka']."'>"; }
-   else { echo "<li class='has-sub' id='Marka'>"; }
-   ?>
-   
+if (isset($_SESSION['marka'])) {echo "<li class='has-sub' id='" . $_SESSION['marka'] . "'>";} else {echo "<li class='has-sub' id='Marka'>";}
+?>
+
     <a href='#'><span>Marka</span></a>
       <ul>
          <li><a href='#' id="Jungheinrich" name="marka" ><span>Jungheinrich</span></a></li>
@@ -61,40 +62,36 @@
     <a href='#'><span>Model</span></a>
       <ul>
 		<?php
-		//
-if($_POST['name'] == "marka")
-{
-	$_SESSION['marka'] = $_POST['id'];
-	unset($_SESSION['ponuda']);
+//
+if ($_POST['name'] == "marka") {
+    $_SESSION['marka'] = $_POST['id'];
+    unset($_SESSION['ponuda']);
 }
-		$conn = pg_connect($dbstring)
-				or die("Can't connect to database".pg_last_error());
+$conn = pg_connect($dbstring)
+or die("Can't connect to database" . pg_last_error());
 
-		if(!$conn)
-		{
-				echo "<li>error #1</li>";
-		}
-		$sql = "SELECT marka, model, count(*) FROM viljuskari";
-		/*if(isset($_SESSION['marka']))
-		{
-				$sql .= " WHERE marka = '".$_SESSION['marka']."'";
-		}
-		else
-		{
-				$sql .= " WHERE marka = 'Jungheinrich'";
-		}*/
-		$sql .= " GROUP BY marka, model ORDER BY count(*) DESC LIMIT 50;";
-		$cmd = pg_query($conn, $sql);
-		
-		if(!$cmd)
-		{
-				echo "<li>error #2</li>";
-		}
-		while($row = pg_fetch_row($cmd))
-		{
-				echo "<li><a href='#' id=\"".$row[1]."\" name=\"model\" ><span>".$row[0]." ".$row[1]." (".$row[2].")</span></a></li>";
-		}
-		 ?>
+if (!$conn) {
+    echo "<li>error #1</li>";
+}
+$sql = "SELECT marka, model, count(*) FROM viljuskari";
+/*if(isset($_SESSION['marka']))
+{
+$sql .= " WHERE marka = '".$_SESSION['marka']."'";
+}
+else
+{
+$sql .= " WHERE marka = 'Jungheinrich'";
+}*/
+$sql .= " GROUP BY marka, model ORDER BY count(*) DESC LIMIT 50;";
+$cmd = pg_query($conn, $sql);
+
+if (!$cmd) {
+    echo "<li>error #2</li>";
+}
+while ($row = pg_fetch_row($cmd)) {
+    echo "<li><a href='#' id=\"" . $row[1] . "\" name=\"model\" ><span>" . $row[0] . " " . $row[1] . " (" . $row[2] . ")</span></a></li>";
+}
+?>
       </ul>
    </li>
    <li class='has-sub' id='Cenaod'>
