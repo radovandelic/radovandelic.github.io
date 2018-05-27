@@ -17,7 +17,7 @@ export default function LinkedIn() {/*
                     <div id="linkedin-container" dir="ltr" className="LI-badge-container-vertical-dark LI-badge-container vertical dark large" style={{ display: 'none' }} >
                         <div className="LI-profile-badge-header LI-name-container"><div className="LI-col">
                             <div className="LI-profile-pic-container" style={{ backgroundImage: 'url(https://static.licdn.com/sc/h/856xpihrituhwdjrua9z5u5na)' }}>
-                                <img src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAMABADGAAwAAQAAAAAAAA1SAAAAJGI5YmNkZTc4LWZkZTEtNDZiNS04MTEyLTUxYmYzMzZkMGQyZg.jpg" className="LI-profile-pic" alt="Radovan Delić" />
+                                <img src="./static/16472916_10211820442857230_5804988685818547532_n.jpg" className="LI-profile-pic" alt="Radovan Delić" />
                             </div>
                         </div>
                             <div className="LI-col LI-header">
