@@ -63,7 +63,7 @@ export default function Intro() {
                                 Hi, I'm Radovan Delić and welcome to my portfolio.
                                 <br />
                                 <br />
-                                I am a Full Stack Developer currently based in Brussels, Belgium.&nbsp;
+                                I am a Full Stack Developer currently based in Munich, Germany.&nbsp;
                                 My current core competence is in Node.js, React, MongoDB and PostgreSQl, but I am also familiar with many other languages and frameworks, e.g C#, PHP, Python, Bootstrap etc.
                                 <br />
                                 <br />
