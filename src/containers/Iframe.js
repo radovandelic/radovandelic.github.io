@@ -79,7 +79,7 @@ export default class Iframe extends Component {
         var github = "https://github.com/radovandelic";
         switch (newProject) {
             case "cookwork":
-                url = "https://cookwork.be";
+                url = "https://www.cookwork.be";
                 github = "https://github.com/radovandelic/cookwork";
                 break;
             case "philarios":
