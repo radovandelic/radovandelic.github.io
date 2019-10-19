@@ -75,7 +75,7 @@ export default class Iframe extends Component {
         }
     }
     changeProject = (newProject) => {
-        var url = "https://philarios.ml";
+        var url = "http://104.207.131.195";
         var github = "https://github.com/radovandelic";
         switch (newProject) {
             case "cookwork":
