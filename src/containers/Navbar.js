@@ -36,30 +36,30 @@ export default function Navbar() {
                                         to="/projects/philarios" id="philarios" className="navbar-item">
                                         philarios
                                     </Link>
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > viljuskari'; }}
+                                        to="/projects/viljuskari" id="viljuskari" className="navbar-item">
+                                        viljuskari
+                                    </Link>
                                     <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > holmichapp'; }}
                                         to="/projects/holmichapp" id="holmichapp" className="navbar-item">
                                         holmichapp
                                     </Link>
-                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > merchantjs'; }}
+                                    {/* <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > merchantjs'; }}
                                         to="/projects/merchantjs" id="merchantjs" className="navbar-item">
                                         merchant.js
+                                    </Link> */}
+                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > battleships'; }}
+                                        to="/projects/battleships" id="battleships" className="navbar-item">
+                                        battleships
                                     </Link>
                                     <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > rankerjs'; }}
                                         to="/projects/rankerjs" id="rankerjs" className="navbar-item">
                                         ranker.js
                                     </Link>
-                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > starbook'; }}
+                                    {/* <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > starbook'; }}
                                         to="/projects/starbook" id="starbook" className="navbar-item">
                                         starbook
-                                    </Link>
-                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > battleships'; }}
-                                        to="/projects/battleships" id="battleships" className="navbar-item">
-                                        battleships
-                                    </Link>
-                                    <Link onClick={e => { document.getElementById('projects').innerHTML = 'Projects > viljuskari'; }}
-                                        to="/projects/viljuskari" id="viljuskari" className="navbar-item">
-                                        viljuskari
-                                    </Link>
+                                    </Link> */}
                                 </div>
                             </div>
                             <Link to="/contact" className="navbar-item" id="contact" onClick={e => { document.getElementById('projects').innerHTML = 'Projects'; }}>
