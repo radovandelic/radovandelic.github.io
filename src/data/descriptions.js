@@ -1,8 +1,8 @@
 
 const descriptions = {
     cookwork: {
-        url: "https://cookwork.eu",
-        github: "",
+        url: "https://www.cookwork.be",
+        github: "https://github.com/radovandelic/cookwork",
         text: "A marketplace for commercial kitchens in Belgium currently under construction for Co-oking SPRL.",
         tech: [
             {
@@ -26,10 +26,10 @@ const descriptions = {
                 url: "https://www.mongodb.com/"
             },
         ],
-        logo: "https://cookwork.eu/static/media/cookwork-circle.png"
+        logo: "/static/media/cookwork.png"
     },
     philarios: {
-        url: "https://philarios.ml",
+        url: "http://104.207.131.195",
         github: "https://github.com/radovandelic/apocryphon/",
         text: "Language learning/practice application developed during my time at Elium Academy in collaboration with:",
         contributors: [
@@ -150,7 +150,7 @@ const descriptions = {
                 url: "http://materializecss.com/"
             }
         ],
-        logo: "https://openfin.co/wp-content/uploads/2015/05/nodejs_logo.png"
+        logo: "https://process.filestackapi.com/deELKydSd2peczaOPAAa"
     },
     merchantjs: {
         url: "https://merchantjs.herokuapp.com/",
@@ -233,7 +233,7 @@ const descriptions = {
         logo: "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/082014/js1_0.png"
     },
     viljuskari: {
-        url: "https://viljuskari.gq/",
+        url: "http://45.77.141.181",
         github: "https://github.com/radovandelic/viljuskari/",
         text: "This is a webscraper application developed for a forlift sales and servicing company in Belgrade, Serbia. It gets data about used forklift adverts from several webpages and compiles a list of the best offers based on make, model and price. It started out as a C# Windows application and gradually evolved into it's current form as a C# console application running 24/7 on a LAPP server.",
         tech: [

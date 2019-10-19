@@ -19,6 +19,7 @@ tree.starbook = dirTree(__dirname + "/starbook", { exclude: /(\.git$|\.gitignore
 tree.cleancalc = dirTree(__dirname + "/cleancalc", { exclude: /(\.git$|\.gitignore$)/ });
 tree.battleships = dirTree(__dirname + "/battleships", { exclude: /(\.git$|\.gitignore$)/ });
 tree.viljuskari = dirTree(__dirname + "/viljuskari", { exclude: /(\.git$|\.gitignore$)/ });
+tree.cookwork = dirTree(__dirname + "/cookwork", { exclude: /(\.git$|\.gitignore$)/ });
 
 tree.philarios.children[0].toggled = true; tree.philarios.children[0].children[11].toggled = true;
 tree.philarios.entry = '../static/codeserve/apocryphon/src/index.js';
@@ -48,6 +49,11 @@ tree.battleships.children[5].children[2].active = true;
 
 tree.viljuskari.entry = '../static/codeserve/viljuskari/README.md';
 tree.viljuskari.children[0].active = true;
+
+
+tree.cookwork.entry = '../static/codeserve/cookwork/frontend/README.md';
+tree.cookwork.children[1].children[2].active = true;
+tree.cookwork.children[1].toggled = true;
 
 for (var key in tree) {
     tree[key].toggled = true;

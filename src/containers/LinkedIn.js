@@ -22,7 +22,7 @@ export default function LinkedIn() {/*
                         </div>
                             <div className="LI-col LI-header">
                                 <div className="LI-name">
-                                    <a href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge-name" rel="noopener noreferrer nofollow" target="_blank">
+                                    <a href="https://www.linkedin.com/in/radovan-delic?trk=profile-badge-name" rel="noopener noreferrer nofollow" target="_blank">
                                         Radovan Delić
                                     </a>
                                 </div>
@@ -32,13 +32,13 @@ export default function LinkedIn() {/*
                         <br />
                         <ul className="more-info">
                             <li className="LI-field">
-                                <a href="https://www.linkedin.com/edu/elium-academy-of-software-%26-entrepreneurship-3155094?trk=profile-badge-school" rel="noopener noreferrer nofollow" target="_blank">
-                                    Elium Academy of Software &amp; Entrepreneurship
+                                <a href="https://www.valiton.com/" rel="noopener noreferrer nofollow" target="_blank">
+                                    Valiton GmbH
                                 </a>
                             </li>
                         </ul>
                         <div className="LI-profile-badge-footer">
-                            <a href="https://be.linkedin.com/in/radovan-delic?trk=profile-badge-cta" className="LI-view-profile" rel="noopener noreferrer nofollow" target="_blank">
+                            <a href="https://www.linkedin.com/in/radovan-delic?trk=profile-badge-cta" className="LI-view-profile" rel="noopener noreferrer nofollow" target="_blank">
                                 View profile
                             </a>
                             <span className="LI-logo">

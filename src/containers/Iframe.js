@@ -63,14 +63,10 @@ export default class Iframe extends Component {
                 break;
 
             case "github":
-                if (this.state.project === "cookwork") {
-                    alert("The client has requested the code for this project to remain private. Sorry.")
-                } else {
-                    recordVisit(this.state.project + "/github");
-                    window.open(this.state.github, '_blank');
-                    if (this.state.github === "https://github.com/radovandelic/apocryphon") {
-                        window.open("https://github.com/radovandelic/philarios", '_blank');
-                    }
+                recordVisit(this.state.project + "/github");
+                window.open(this.state.github, '_blank');
+                if (this.state.github === "https://github.com/radovandelic/apocryphon") {
+                    window.open("https://github.com/radovandelic/philarios", '_blank');
                 }
                 break;
 
@@ -83,11 +79,11 @@ export default class Iframe extends Component {
         var github = "https://github.com/radovandelic";
         switch (newProject) {
             case "cookwork":
-                url = "https://cookwork.eu";
-                github = "https://github.com/radovandelic";
+                url = "https://cookwork.be";
+                github = "https://github.com/radovandelic/cookwork";
                 break;
             case "philarios":
-                url = "https://philarios.ml";
+                url = "http://104.207.131.195";
                 github = "https://github.com/radovandelic/apocryphon";
                 break;
             case "holmichapp":
@@ -115,7 +111,7 @@ export default class Iframe extends Component {
                 github = "https://github.com/radovandelic/cleancalc";
                 break;
             case "viljuskari":
-                url = "https://viljuskari.gq";
+                url = "http://45.77.141.181/";
                 github = "https://github.com/radovandelic/viljuskari";
                 break;
             default:
@@ -144,7 +140,7 @@ export default class Iframe extends Component {
                 break;
             case 'code':
                 recordVisit(match.params.project + "/code");
-                if (match.params.project === "cookwork") {
+                if (match.params.project === "cookworka") {
                     alert("The client has requested the code for this project to remain private. Sorry.")
                 } else {
                     frame = <TreeView data={dirTree[match.params.project]} />;

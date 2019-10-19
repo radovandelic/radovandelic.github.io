@@ -75,7 +75,7 @@ export default function Intro() {
                                     rel="noopener noreferrer nofollow" target="_blank">32/32</a></strong> perfect solutions.
                                 <br />
                                 <br />
-                                Feel free to check out some of my demo projects in the navbar, in reverse chronological order.
+                                Feel free to check out some of my demo projects in the navbar.
                                 <br />
                                 Keep in mind that some of the older projects feature quite unreadable spaghetti code,
                                 but I have grown emotionally attached to them and also,
@@ -85,6 +85,11 @@ export default function Intro() {
                                 Q: What is my favorite language/framework?
                                 <br />
                                 A: Whatever gets the job done. (and has decent documentation and community support ofc)
+                                <br />A: Except PHP, PHP sucks.
+                                <br />
+                                <br />
+                                Note: these projects are all from ages ago (2017) when I was still a junior developer with very little professional experience.
+                                <br /> Unfortunatelly I can't show you any of my newer work because it is all backend stuff and the source code is owned by The Company&trade;.
                             </p>
 
 
