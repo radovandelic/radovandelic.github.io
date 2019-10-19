@@ -1,0 +1,117 @@
+nav {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.40);
+}
+
+.navbar.navbar-fixed-top {
+    background-color: #fff;
+    border-color: #fff;
+    z-index: 2;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar-header.navbar-logo {
+    padding: 0;
+    margin-left: 0;
+}
+
+.navbar-header,
+.nav.navbar-right>li>a {
+    padding: 5px 3px;
+}
+
+.navbar-btn.nav-link {
+    font-size: 16px;
+    height: 36px;
+    padding: 0 12px;
+    margin: 0;
+    border: solid 1px #484848;
+    color: #484848;
+    background-color: #fff;
+}
+
+.navbar-btn.nav-link:hover {
+    color: #fff;
+    background-color: #484848;
+}
+
+.navbar-btn.nav-link-grey,
+.navbar-btn.nav-link-grey:focus {
+    color: #fff;
+    background-color: #484848;
+}
+
+.navbar-btn.nav-link-grey:hover {
+    background-color: #fff;
+    color: #484848;
+}
+
+.navbar-btn.nav-link-orange,
+.navbar-btn.nav-link-orange:focus {
+    background-color: #ff6114;
+    color: #fff;
+    border: solid 1px #ff6114;
+}
+
+.navbar-btn.nav-link-orange:hover {
+    background-color: #fff;
+    color: #ff6114;
+}
+
+.select.lang {
+    width: 70px;
+    padding: 5px 3px;
+    margin: 0;
+}
+
+.select.lang.mobile {
+    display: none;
+}
+
+.select.lang>select {
+    height: 36px;
+    padding: 5px 3px;
+}
+
+.btn.navbar-btn.nav-link {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-btn.nav-link,
+    .navbar-btn.nav-link:active {
+        width: 100%;
+        text-align: left;
+        background-color: #ff6114;
+        color: #fff;
+    }
+    .navbar-btn.nav-link:hover {
+        color: #ff6114;
+        background-color: #fff;
+    }
+    .nav.navbar-right>li>a {
+        padding: 0;
+    }
+    #lang {
+        display: none;
+    }
+    .select.lang.mobile {
+        display: inline-flex;
+        margin: 0;
+        margin-left: -20px;
+        padding: 0;
+        width: 45px;
+    }
+    .select.lang.mobile select {
+        font-size: 10px;
+        margin: 2px 0;
+        height: 36px;
+        border-radius: 5px;
+    }
+    .select.lang.mobile .select_arrow {
+        right: 10px;
+        top: 12px;
+    }
+}

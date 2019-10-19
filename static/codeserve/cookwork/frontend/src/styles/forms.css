@@ -1,0 +1,254 @@
+.images-container {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container.image-upload {
+    display: block;
+}
+
+.form-container.login-container {
+    max-width: 600px;
+}
+
+.images-container>div {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.images-container>div>div {
+    width: 250px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-container img {
+    height: 100px;
+    margin: 0 auto;
+}
+
+label {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.checkbox-grid,
+.radio-grid {
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+.checkbox-grid li,
+.radio-grid li {
+    display: flex;
+    float: left;
+}
+
+.checkbox-grid li {
+    width: 50%;
+}
+
+.radio-grid li {
+    width: 100%;
+    padding-left: 0;
+    margin: 2px;
+}
+
+.react-form-control-radio {
+    display: block;
+    margin: 0;
+}
+
+.d-inline-block {
+    display: flex;
+    float: left;
+    flex-direction: row-reverse;
+    font-size: 75%;
+    font-weight: 500;
+}
+
+.react-form-control-indicator.react-form-input.react-form-radio,
+.react-form-control-indicator.react-form-input.react-form-checkbox {
+    height: 0px;
+}
+
+.inline {
+    display: inline-flex;
+    width: 100%;
+}
+
+input.react-form-input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+textarea.react-form-input {
+    width: 100%;
+    font-size: 20px;
+}
+
+.form-group {
+    width: 100%;
+    padding: 15px;
+}
+
+.form-group-checkbox,
+.form-group-hours,
+.form-group-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-group>div>label {
+    margin-top: 5px;
+}
+
+#submit {
+    width: 100%;
+    margin: auto;
+}
+
+.react-form-message {
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.react-form-message-error {
+    color: #ff6114;
+}
+
+.react-form-message-warning {
+    color: #ff6114;
+}
+
+.react-form-message-success {
+    color: #ff6114;
+}
+
+.react-form-control>input[type="checkbox"],
+.react-form-control>input[type="radio"] {
+    margin: 0 6px 0;
+}
+
+#rememberme,
+#agree {
+    position: relative;
+    top: 4px;
+}
+
+.uploaded-message {
+    color: #ff6114;
+    font-weight: 600;
+}
+
+.upload-thumb {
+    max-height: 40vh;
+    max-width: 95%;
+    margin: 5px;
+}
+
+.btn.btn-orange.inline {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.form-group>p {
+    font-size: 12px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.form-group>.fa {
+    margin: 27px 22px;
+    font-size: 24px;
+    z-index: 1;
+    color: #ff6114;
+}
+
+.form-group .form-control:focus {
+    border-color: #ff6114;
+}
+
+#terms {
+    text-align: left;
+}
+
+.form-group.radio-group {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group.radio-group small {
+    margin-left: 30px;
+    font-size: 60%;
+}
+
+#userinfo-select {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hiddn small {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.form-group.form-group-date input,
+.form-group.form-group-date select {
+    width: 85%;
+    height: 36px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .form-container>h3 {
+        text-align: justify;
+        font-size: 16px;
+    }
+    .inline {
+        display: block;
+    }
+    .d-inline-block {
+        font-size: 55%;
+    }
+    .cancellation-item {
+        font-size: 45%;
+    }
+    label.react-form-control.react-form-control-checkbox.d-inline-block,
+    label.react-form-control.react-form-control-radio.d-inline-block {
+        padding: 2px;
+        margin-bottom: 2px;
+    }
+    .react-form-control>input[type="checkbox"],
+    .react-form-control>input[type="radio"] {
+        margin: -2px 5px 0;
+    }
+    #terms label,
+    .radio-grid label {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .d-inline-block {
+        font-size: 45%;
+    }
+    .cancellation-item {
+        font-size: 40%;
+    }
+    #terms label {
+        font-size: 12px;
+    }
+}
