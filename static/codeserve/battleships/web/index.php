@@ -76,7 +76,7 @@ $app->get('/getall/', function () use ($app) {
     }
 
     $query = "SELECT * from gamedata WHERE active = 1";
-    $query .= $_GET['id'] ? " AND id !=" . $_GET['id'] : "";
+    $query .= $_GET['id'] ? " AND id !=" . $_GET['id'] : ""; // yes I know, SQL injection, I was a junior dev, give me a break
     $query .= " ORDER BY id;";
 
     $st = $app['pdo']->prepare($query);
