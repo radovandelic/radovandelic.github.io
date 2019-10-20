@@ -22,7 +22,7 @@ export default class Iframe extends Component {
         this.state = {
             active: "description",
             project: "philarios",
-            url: "http://104.207.131.195",
+            url: "https://104.207.131.195",
             github: "https://github.com/radovandelic/apocryphon"
         };
     }
@@ -75,7 +75,7 @@ export default class Iframe extends Component {
         }
     }
     changeProject = (newProject) => {
-        var url = "http://104.207.131.195";
+        var url = "https://104.207.131.195";
         var github = "https://github.com/radovandelic";
         switch (newProject) {
             case "cookwork":
@@ -83,7 +83,7 @@ export default class Iframe extends Component {
                 github = "https://github.com/radovandelic/cookwork";
                 break;
             case "philarios":
-                url = "http://104.207.131.195";
+                url = "https://104.207.131.195";
                 github = "https://github.com/radovandelic/apocryphon";
                 break;
             case "holmichapp":

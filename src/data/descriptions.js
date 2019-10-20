@@ -33,7 +33,7 @@ const descriptions = {
         logo: "/static/media/cookwork.png"
     },
     philarios: {
-        url: "http://104.207.131.195",
+        url: "https://104.207.131.195",
         github: "https://github.com/radovandelic/apocryphon/",
         text: "Language learning/practice application PoC developed during my time at the Elium Academy coding bootcamp in Brussels, in collaboration with:",
         contributors: [
