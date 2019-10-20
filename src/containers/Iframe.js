@@ -22,7 +22,7 @@ export default class Iframe extends Component {
         this.state = {
             active: "description",
             project: "philarios",
-            url: "https://philarios.ml",
+            url: "http://104.207.131.195",
             github: "https://github.com/radovandelic/apocryphon"
         };
     }

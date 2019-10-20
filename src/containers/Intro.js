@@ -63,16 +63,17 @@ export default function Intro() {
                                 Hi, I'm Radovan Delić and welcome to my portfolio.
                                 <br />
                                 <br />
-                                I am a Full Stack Developer currently based in Munich, Germany.&nbsp;
-                                My current core competence is in Node.js, React, MongoDB and PostgreSQl, but I am also familiar with many other languages and frameworks, e.g C#, PHP, Python, Bootstrap etc.
+                                I am a Full Stack Developer with a strong focus on backend and DevOps, currently based in Munich, Germany,&nbsp;
+                                enthusiastic about writing clean code and automating everything that can reasonably be automated.&nbsp;
+                                My current core competences are in Node.js, Serverless, React, Bash/Shell scripting, MongoDB, PostgreSQl and Python, but I am also familiar with many other languages, tools and frameworks, e.g Terraform, Docker, Nginx, Redshift, Ruby, C#, PHP, Bootstrap etc.
                                 <br />
                                 <br />
-                                In 2017 I competed in the&nbsp;
+                                I don't have a college degree, but in 2017 I competed in the ongoing&nbsp;
                             <strong><a href="https://www.hackerrank.com/results/projecteuler/r_delic"
-                                    rel="noopener noreferrer nofollow" target="_blank">Project Euler</a></strong>&nbsp;
-                            challenge on <a href="https://www.hackerrank.com" rel="noopener noreferrer nofollow" target="_blank">HackerRank</a> and scored in the top 2% out of ~70k participants
+                                    rel="noopener noreferrer nofollow" target="_blank">Project Euler+</a></strong>&nbsp;
+                            algorithm writing challenge on <a href="https://www.hackerrank.com" rel="noopener noreferrer nofollow" target="_blank">HackerRank</a> and scored in the top 2% out of ~70k participants
                             with <strong><a href="https://www.hackerrank.com/results/projecteuler/r_delic"
-                                    rel="noopener noreferrer nofollow" target="_blank">32/32</a></strong> perfect solutions.
+                                    rel="noopener noreferrer nofollow" target="_blank">32/32</a></strong> perfect solutions, so I don't feel that is an impediment to my career potential.
                                 <br />
                                 <br />
                                 Feel free to check out some of my demo projects in the navbar.
@@ -88,8 +89,8 @@ export default function Intro() {
                                 <br />A: Except PHP, PHP sucks.
                                 <br />
                                 <br />
-                                Note: these projects are all from ages ago (2017) when I was still a junior developer with very little professional experience.
-                                <br /> Unfortunatelly I can't show you any of my newer work because it is all backend stuff and the source code is owned by The Company&trade;.
+                                Note: these projects are all from ages ago (2014-2017) when I was still a self-made junior developer with very little professional experience or knowledge of industry best practices.
+                                <br /> Unfortunatelly I can't show you any of my newer work because it is all backend/infrastructure stuff or internal scripts/tools and the source code is owned by The Company&trade;.
                             </p>
 
 

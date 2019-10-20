@@ -3,7 +3,7 @@ const descriptions = {
     cookwork: {
         url: "https://www.cookwork.be",
         github: "https://github.com/radovandelic/cookwork",
-        text: "A marketplace for commercial kitchens in Belgium currently under construction for Co-oking SPRL.",
+        text: "An MVP marketplace for commercial kitchen rentals in Belgium developed for Co-oking SPRL during my time in Brussels in early 2018.",
         tech: [
             {
                 name: "Node.js",
@@ -25,13 +25,17 @@ const descriptions = {
                 name: "MongoDB",
                 url: "https://www.mongodb.com/"
             },
+            {
+                name: "Bootstrap",
+                url: "https://getbootstrap.com/"
+            }
         ],
         logo: "/static/media/cookwork.png"
     },
     philarios: {
         url: "http://104.207.131.195",
         github: "https://github.com/radovandelic/apocryphon/",
-        text: "Language learning/practice application developed during my time at Elium Academy in collaboration with:",
+        text: "Language learning/practice application PoC developed during my time at the Elium Academy coding bootcamp in Brussels, in collaboration with:",
         contributors: [
             {
                 name: "Cahit Kaya",
@@ -83,7 +87,7 @@ const descriptions = {
     holmichapp: {
         url: "https://holmichapp.herokuapp.com/",
         github: "https://github.com/radovandelic/holmichapp/",
-        text: "Carpooling app developed in collaboration with:",
+        text: "Carpooling app PoC developed during my time at the Elium Academy coding bootcamp in Brussels, in collaboration with:",
         contributors: [
             {
                 name: "Cahit Kaya",
@@ -119,7 +123,7 @@ const descriptions = {
     rankerjs: {
         url: "https://rankerjs.herokuapp.com/",
         github: "https://github.com/radovandelic/rankerjs/",
-        text: "Simple image ranking application developed in collaboration with:",
+        text: "Simple image ranking app developed for practice during my time at the Elium Academy coding bootcamp in Brussels, in collaboration with:",
         contributors: [
             {
                 name: "George Ingram",
@@ -187,7 +191,7 @@ const descriptions = {
     battleships: {
         url: "https://battleshipsjs.herokuapp.com/",
         github: "https://github.com/radovandelic/battleship/",
-        text: "An online multiplayer battleship game.",
+        text: "A simple online multiplayer battleship game, developed during my time at the Elium Academy coding bootcamp in Brussels.",
         tech: [
             {
                 name: "javascript",
@@ -235,7 +239,7 @@ const descriptions = {
     viljuskari: {
         url: "http://45.77.141.181",
         github: "https://github.com/radovandelic/viljuskari/",
-        text: "This is a webscraper application developed for a forlift sales and servicing company in Belgrade, Serbia. It gets data about used forklift adverts from several webpages and compiles a list of the best offers based on make, model and price. It started out as a C# Windows application and gradually evolved into it's current form as a C# console application running 24/7 on a LAPP server.",
+        text: "This is a webscraper application developed for a forklift sales and servicing company in Belgrade, Serbia (2014-2017). It gets data about used forklift adverts from several webpages and compiles a list of the best offers based on make, model and price. It started out as a C# Windows application and gradually evolved into it's current form as a C# console application running 24/7 on a LAPP server.",
         tech: [
             {
                 name: "C#",
