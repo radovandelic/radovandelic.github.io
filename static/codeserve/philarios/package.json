@@ -36,7 +36,7 @@
     "compression": "^1.5.2",
     "cors": "^2.7.1",
     "country-data": "0.0.31",
-    "express": "^4.13.3",
+    "express": "^4.17.3",
     "file-system": "^2.2.2",
     "flickrapi": "^0.6.0",
     "google-translator": "^1.0.1",
